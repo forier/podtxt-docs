@@ -108,11 +108,11 @@
 ## 📱 4. Permission Declarations
 
 ### 4.1 iOS Info.plist
-- [ ] Add fields with clear contextual explanations:
-  - [ ] `NSCameraUsageDescription` - "Camera access for taking photos"
-  - [ ] `NSLocationWhenInUseUsageDescription` - "Location access for local services"
-  - [ ] `NSMicrophoneUsageDescription` - "Microphone access for audio recordings"
-  - [ ] `NSPhotoLibraryUsageDescription` - "Photo library access for selecting images"
+- [x] Add fields with clear contextual explanations:
+  - [x] `NSCameraUsageDescription` - "Camera access for taking photos"
+  - [x] `NSLocationWhenInUseUsageDescription` - "Location access for local services"
+  - [x] `NSMicrophoneUsageDescription` - "Microphone access for audio recordings"
+  - [x] `NSPhotoLibraryUsageDescription` - "Photo library access for selecting images"
 
 ### 4.2 Android Runtime Permissions
 - [ ] Provide permission rationale messages justifying use of:
@@ -186,11 +186,12 @@
 - [x] 2.7 Dispute Resolution
 - [x] 3.1 Apple App Store & Privacy Nutrition Labels
 - [x] 3.2 Google Play Data Safety
+- [x] 4.1 iOS Info.plist
 - [x] 8.1 Repository Setup
 - [x] 8.2 Commit Flow
 
 ### Pending Tasks ⏳
-- [ ] 4.1 iOS Info.plist
+- [ ] 4.2 Android Runtime Permissions
 - [ ] 2.7 Dispute Resolution
 - [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 3.2 Google Play Data Safety
@@ -217,4 +218,4 @@
 ---
 
 *Last updated: April 28, 2025*
-*Status: 11/18 tasks completed (61.1%)* 
+*Status: 12/18 tasks completed (66.7%)* 

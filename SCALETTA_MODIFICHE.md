@@ -128,12 +128,12 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 
 ## 📱 4. Dichiarazioni sui Permessi
 
-### 4.1 iOS Info.plist
-- [ ] Aggiungere i campi con spiegazioni contestuali chiare:
-  - [ ] `NSCameraUsageDescription` - "Accesso alla fotocamera per scattare foto"
-  - [ ] `NSLocationWhenInUseUsageDescription` - "Accesso alla posizione per servizi locali"
-  - [ ] `NSMicrophoneUsageDescription` - "Accesso al microfono per registrazioni audio"
-  - [ ] `NSPhotoLibraryUsageDescription` - "Accesso alla galleria per selezionare immagini"
+### 4.1 iOS Info.plist ✅ COMPLETATO
+- [x] Aggiungere i campi con spiegazioni contestuali chiare:
+  - [x] `NSCameraUsageDescription` - "Accesso alla fotocamera per scattare foto"
+  - [x] `NSLocationWhenInUseUsageDescription` - "Accesso alla posizione per servizi locali"
+  - [x] `NSMicrophoneUsageDescription` - "Accesso al microfono per registrazioni audio"
+  - [x] `NSPhotoLibraryUsageDescription` - "Accesso alla galleria per selezionare immagini"
 
 ### 4.2 Android Runtime Permissions
 - [ ] Fornire messaggi di permission rationale che giustifichino l'uso di:

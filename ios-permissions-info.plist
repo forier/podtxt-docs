@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- 
+    iOS Info.plist Permission Descriptions
+    This file contains the permission descriptions that must be included in the iOS app's Info.plist file
+    to comply with Apple App Store guidelines and provide clear explanations to users.
+    
+    Each permission includes:
+    - The exact key name required by iOS
+    - A clear, contextual explanation of why the permission is needed
+    - User-friendly language that explains the benefit to the user
+    -->
+    
+    <!-- Camera Permission -->
+    <key>NSCameraUsageDescription</key>
+    <string>This app needs access to your camera to allow you to take photos and videos for creating content, scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose to use within the app.</string>
+    
+    <!-- Location Permission (When In Use) -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs access to your location to provide location-based services, such as finding nearby content, location-specific features, or improving your experience with relevant local information. Your location is only accessed when you actively use location-based features.</string>
+    
+    <!-- Microphone Permission -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app needs access to your microphone to enable voice recording, audio messages, voice commands, and other audio-related features. Audio recordings will only be captured when you actively use audio features and will be processed according to our privacy policy.</string>
+    
+    <!-- Photo Library Permission -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app needs access to your photo library to allow you to select and upload photos and videos from your device. This enables you to share content, create posts, or use images in various app features. We only access photos you specifically choose to share.</string>
+    
+    <!-- Photo Library Add-Only Permission -->
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>This app needs permission to save photos and videos to your photo library. This allows you to save content you create or download within the app to your device's photo gallery for easy access and sharing.</string>
+    
+    <!-- Face ID / Touch ID Permission -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>This app uses Face ID (or Touch ID) to securely authenticate your identity and provide quick, secure access to your account. This helps protect your personal information and provides a convenient login experience.</string>
+    
+    <!-- Bluetooth Permission (if applicable) -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>This app needs access to Bluetooth to connect with nearby devices, share content, or enable proximity-based features. Bluetooth is used to enhance your experience with device connectivity and content sharing.</string>
+    
+    <!-- Network Permission -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>This app may access your local network to discover nearby devices, enable local content sharing, or provide network-based features. This helps you connect with devices on your local network for enhanced functionality.</string>
+    
+    <!-- Health Kit Permission (if applicable) -->
+    <key>NSHealthShareUsageDescription</key>
+    <string>This app may request access to your health data to provide health-related features, track wellness metrics, or integrate with your health and fitness goals. We only access health data you explicitly choose to share.</string>
+    
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>This app may update your health data to record activities, track progress, or sync information with your health profile. We only update health data with your explicit permission and for features you choose to use.</string>
+    
+    <!-- Motion and Fitness Permission -->
+    <key>NSMotionUsageDescription</key>
+    <string>This app may access motion and fitness data to provide activity tracking, gesture controls, or fitness-related features. This helps enhance your experience with motion-based interactions and health monitoring.</string>
+    
+    <!-- Speech Recognition Permission (if applicable) -->
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>This app may use speech recognition to enable voice commands, voice-to-text features, or hands-free operation. This provides convenient voice-based interaction with the app's features.</string>
+    
+    <!-- Siri Permission (if applicable) -->
+    <key>NSSiriUsageDescription</key>
+    <string>This app integrates with Siri to enable voice commands and hands-free operation. This allows you to use Siri to control app features and access content through voice commands.</string>
+    
+    <!-- Calendar Permission (if applicable) -->
+    <key>NSCalendarsUsageDescription</key>
+    <string>This app may access your calendar to schedule events, set reminders, or sync with your existing calendar. This helps you manage your schedule and integrate app activities with your daily planning.</string>
+    
+    <!-- Contacts Permission (if applicable) -->
+    <key>NSContactsUsageDescription</key>
+    <string>This app may access your contacts to help you connect with friends, share content, or find people you know. We only access contacts you choose to share and use this information to enhance your social experience.</string>
+    
+    <!-- Reminders Permission (if applicable) -->
+    <key>NSRemindersUsageDescription</key>
+    <string>This app may access your reminders to help you set and manage tasks, create to-do lists, or integrate with your existing reminder system. This helps you stay organized and track your activities.</string>
+    
+    <!-- Apple Music Permission (if applicable) -->
+    <key>NSAppleMusicUsageDescription</key>
+    <string>This app may access your Apple Music library to provide music-related features, create playlists, or enhance your audio experience. We only access music data you choose to share.</string>
+    
+    <!-- Media Library Permission (if applicable) -->
+    <key>NSAppleMusicUsageDescription</key>
+    <string>This app may access your media library to provide music and video features, create playlists, or enhance your entertainment experience. We only access media you choose to share.</string>
+    
+    <!-- 
+    Additional Notes:
+    
+    1. Only include permissions that your app actually uses
+    2. Customize the descriptions to match your app's specific features
+    3. Keep descriptions clear, concise, and user-friendly
+    4. Explain the benefit to the user, not just the technical requirement
+    5. Update descriptions when app features change
+    6. Test permission requests in the app to ensure they work correctly
+    7. Follow Apple's Human Interface Guidelines for permission requests
+    
+    Best Practices:
+    - Request permissions only when needed (just-in-time)
+    - Provide clear explanations before requesting permissions
+    - Allow users to decline permissions gracefully
+    - Provide alternative functionality when permissions are denied
+    - Test permission flows thoroughly before App Store submission
+    -->
+    
+</dict>
+</plist> 
