@@ -467,7 +467,91 @@ However, please note that this will not affect the lawfulness of the processing 
 
 If you have questions or comments about your privacy rights, you may email us at support@podtxt.com.
 
-## 10. CONTROLS FOR DO-NOT-TRACK FEATURES
+## 10. APPLE APP STORE PRIVACY NUTRITION LABELS
+
+**In Short: This section provides information about data collection and usage in compliance with Apple App Store Privacy Nutrition Labels requirements.**
+
+To comply with Apple App Store requirements and provide transparency about our data practices, we have categorized our data collection and usage according to Apple's Privacy Nutrition Labels framework.
+
+### 10.1. Data Used to Track You
+
+**Definition:** Data that is linked to you and used to track you across apps and websites owned by other companies.
+
+**Categories of Data We May Use for Tracking:**
+- **Contact Info:** Email address, phone number, name
+- **Identifiers:** User ID, device ID, advertising ID (IDFA)
+- **Usage Data:** App interactions, feature usage, session duration
+- **Diagnostics:** Crash data, performance metrics
+- **Other Data:** Custom user data, preferences
+
+**Purposes of Tracking:**
+- Advertising and marketing
+- Analytics and app improvement
+- Personalization of content
+- Cross-app functionality
+
+**Third-Party Tracking:**
+We may share tracking data with:
+- Analytics providers (Google Analytics, Firebase)
+- Advertising networks
+- Social media platforms
+- Marketing partners
+
+### 10.2. Data Linked to You
+
+**Definition:** Data that is linked to your identity and used to provide personalized services.
+
+**Categories of Data We May Link to You:**
+- **Contact Info:** Email address, phone number, name, address
+- **Identifiers:** User ID, account ID, device ID
+- **Financial Info:** Payment information, subscription status
+- **Usage Data:** App usage patterns, preferences, settings
+- **User Content:** Messages, comments, uploaded content
+- **Diagnostics:** App performance data, crash reports
+
+**Purposes of Linking:**
+- Account management and authentication
+- Subscription and payment processing
+- Personalized user experience
+- Customer support and communication
+- App functionality and features
+
+### 10.3. Data Not Linked to You
+
+**Definition:** Data that is collected but not linked to your identity.
+
+**Categories of Data We May Collect Without Linking:**
+- **Analytics Data:** Aggregated usage statistics
+- **Performance Data:** App performance metrics
+- **Crash Data:** Anonymous crash reports
+- **Device Data:** Device type, operating system version
+- **Network Data:** Connection type, IP address (anonymized)
+
+**Purposes of Non-Linked Data:**
+- App performance monitoring
+- Service improvement
+- Security and fraud prevention
+- Statistical analysis
+
+### 10.4. Data Collection Transparency
+
+**Your Control Over Data:**
+- **Opt-out of Tracking:** You can opt out of data tracking through your device settings
+- **Data Access:** You can request access to your personal data
+- **Data Deletion:** You can request deletion of your personal data
+- **Data Portability:** You can request a copy of your data in a portable format
+
+**Updates to Privacy Labels:**
+We will update our Privacy Nutrition Labels whenever we make material changes to our data collection or usage practices. You will be notified of such changes through app updates or direct communication.
+
+### 10.5. Contact for Privacy Questions
+
+If you have questions about our data practices or Privacy Nutrition Labels, please contact us at:
+- Email: support@podtxt.com
+- In-app: Privacy settings section
+- Website: [Privacy Policy page]
+
+## 11. CONTROLS FOR DO-NOT-TRACK FEATURES
 
 Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
 

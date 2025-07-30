@@ -212,7 +212,24 @@ These Terms constitute the entire agreement between you and us regarding the use
 ### 7.7. Copyright/Trademark Information
 Copyright © 2023 Ampera SA All rights reserved. All trademarks, logos and service marks ("Marks") displayed on the Site are our property or the property of other third parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.
 
-### 7.8. Contact Information
+### 7.8. Apple App Store Compliance
+
+**Privacy Nutrition Labels:**
+Our app complies with Apple App Store Privacy Nutrition Labels requirements. We categorize our data collection and usage as follows:
+
+**Data Used to Track You:** We may use certain data to track you across apps and websites owned by other companies for advertising and analytics purposes. You can control this through your device settings.
+
+**Data Linked to You:** We collect and link certain data to your identity to provide personalized services, manage your account, and process payments.
+
+**Data Not Linked to You:** We collect some data that is not linked to your identity for app performance monitoring and service improvement.
+
+**App Store Updates:**
+We will update our Privacy Nutrition Labels in App Store Connect whenever we make material changes to our data collection or usage practices. These updates will be reflected in new app versions.
+
+**App Store Guidelines:**
+Our app and these Terms comply with Apple App Store Review Guidelines. We are responsible for the content, privacy, and security of our app, regardless of Apple's review process.
+
+### 7.9. Contact Information
 Ampera SA
 Lugano, Switzerland
 Email: support@podtxt.com 

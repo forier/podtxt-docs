@@ -88,12 +88,12 @@
 ## 🏪 3. Store Requirements
 
 ### 3.1 Apple App Store & Privacy Nutrition Labels
-- [ ] Integrate summary compliant with Apple Privacy Nutrition Labels:
-  - [ ] "Data Used to Track You"
-  - [ ] "Data Linked to You"
-  - [ ] "Data Not Linked to You"
-- [ ] Ensure App Store Connect declarations exactly match policies
-- [ ] Update labels with each new app version
+- [x] Integrate summary compliant with Apple Privacy Nutrition Labels:
+  - [x] "Data Used to Track You"
+  - [x] "Data Linked to You"
+  - [x] "Data Not Linked to You"
+- [x] Ensure App Store Connect declarations exactly match policies
+- [x] Update labels with each new app version
 
 ### 3.2 Google Play Data Safety
 - [ ] Prepare Data Safety section in Play Console:
@@ -184,11 +184,12 @@
 - [x] 2.5 Security Measures
 - [x] 2.6 Data Subject Rights
 - [x] 2.7 Dispute Resolution
+- [x] 3.1 Apple App Store & Privacy Nutrition Labels
 - [x] 8.1 Repository Setup
 - [x] 8.2 Commit Flow
 
 ### Pending Tasks ⏳
-- [ ] 3.1 Apple App Store & Privacy Nutrition Labels
+- [ ] 3.2 Google Play Data Safety
 - [ ] 2.7 Dispute Resolution
 - [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 3.2 Google Play Data Safety
@@ -215,4 +216,4 @@
 ---
 
 *Last updated: April 28, 2025*
-*Status: 9/18 tasks completed (50.0%)* 
+*Status: 10/18 tasks completed (55.6%)* 

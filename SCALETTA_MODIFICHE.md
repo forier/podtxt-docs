@@ -108,13 +108,13 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 
 ## 🏪 3. Requisiti Store
 
-### 3.1 Apple App Store & Privacy Nutrition Labels
-- [ ] Integrare riepilogo conforme alle Privacy Nutrition Labels Apple:
-  - [ ] "Data Used to Track You"
-  - [ ] "Data Linked to You"
-  - [ ] "Data Not Linked to You"
-- [ ] Assicurarsi che le dichiarazioni in App Store Connect corrispondano esattamente alle policy
-- [ ] Aggiornare le labels ad ogni nuova versione dell'app
+### 3.1 Apple App Store & Privacy Nutrition Labels ✅ COMPLETATO
+- [x] Integrare riepilogo conforme alle Privacy Nutrition Labels Apple:
+  - [x] "Data Used to Track You"
+  - [x] "Data Linked to You"
+  - [x] "Data Not Linked to You"
+- [x] Assicurarsi che le dichiarazioni in App Store Connect corrispondano esattamente alle policy
+- [x] Aggiornare le labels ad ogni nuova versione dell'app
 
 ### 3.2 Google Play Data Safety
 - [ ] Preparare la sezione Data safety nel Play Console:
