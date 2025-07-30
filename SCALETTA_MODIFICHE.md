@@ -55,15 +55,15 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] Processo di verifica dell'identità
 
 ### 2.3 Cookie Policy & Tracking Technologies
-- [ ] Creare una sezione dedicata alla Cookie Policy:
-  - [ ] Classificazione cookie per finalità (necessari, analitici, marketing)
-  - [ ] Opzioni di opt-out chiare
-  - [ ] Link a cookie notice estesa
-- [ ] Indicare l'uso di:
-  - [ ] Web beacon
-  - [ ] Pixel di tracciamento
-  - [ ] Tecnologie simili
-  - [ ] Local storage e session storage
+- [x] Creare una sezione dedicata alla Cookie Policy:
+  - [x] Classificazione cookie per finalità (necessari, analitici, marketing)
+  - [x] Opzioni di opt-out chiare
+  - [x] Link a cookie notice estesa
+- [x] Indicare l'uso di:
+  - [x] Web beacon
+  - [x] Pixel di tracciamento
+  - [x] Tecnologie simili
+  - [x] Local storage e session storage
 
 ### 2.4 Condivisione con Terze Parti
 - [ ] Elencare i service provider e le categorie di terze parti:

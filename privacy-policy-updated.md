@@ -179,7 +179,51 @@ We may need to share your personal information in the following situations:
 
 **In Short: We may use cookies and other tracking technologies to collect and store your information.**
 
-We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice.
+We use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. The information we collect includes, but is not limited to, account activation time, content displayed to you and whether you clicked on it, advertisements displayed to you and whether you clicked on them, URLs you have visited, notifications that have appeared on your mobile device, your Internet Protocol ("IP") address, your mobile country code, and your user ID.
+
+### Types of Cookies and Tracking Technologies We Use
+
+**Essential Cookies:** These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.
+
+**Analytics Cookies:** These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.
+
+**Marketing Cookies:** These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.
+
+**Functional Cookies:** These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages.
+
+### How to Control Cookies and Tracking Technologies
+
+You may be able to limit the amount of information collected from your device (e.g., computer, phone, or tablet) with us by adjusting your device or browser settings. However, by preventing us from collecting information from you, we may not be able to provide some functions on our Services.
+
+**Browser Settings:** Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services.
+
+**Mobile Device Settings:** For mobile devices, you can typically control tracking through your device settings, including:
+- Location services
+- Advertising identifier (IDFA/AAID)
+- Analytics and crash reporting
+- Push notifications
+
+**Third-Party Opt-Out:** You may also opt out of interest-based advertising by advertisers on our Services. For more information about opting out of interest-based advertising, please visit the Network Advertising Initiative website or the Digital Advertising Alliance website.
+
+### Local Storage and Session Storage
+
+We may use local storage and session storage technologies to store information on your device. Local storage persists even after you close your browser, while session storage is cleared when you close your browser. These technologies help us provide a better user experience and remember your preferences.
+
+### Web Beacons and Pixels
+
+We may use web beacons (also known as pixel tags or clear GIFs) to track your interactions with our Services. These are small, transparent images that are embedded in web pages and emails to track user behavior and measure the effectiveness of our marketing campaigns.
+
+### Third-Party Tracking
+
+Some of our third-party service providers may use their own cookies and tracking technologies. These third parties include:
+- Analytics providers (e.g., Google Analytics)
+- Advertising networks
+- Social media platforms
+- Payment processors
+
+Each third-party provider has their own privacy policy and cookie policy. We encourage you to review these policies to understand how they collect and use your information.
+
+For specific information about how we use such technologies and how you can refuse certain cookies, please refer to our detailed Cookie Notice available at [link to cookie notice].
 
 ## 6. HOW LONG DO WE KEEP YOUR INFORMATION?
 

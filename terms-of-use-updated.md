@@ -44,6 +44,21 @@ You acknowledge that all the intellectual property rights, including copyrights,
 ### 1.6. Feedback
 If you provide Company with any feedback or suggestions regarding the Site ("Feedback"), you hereby assign to Company all rights in such Feedback and agree that Company shall have the right to use and fully exploit such Feedback and related information in any manner it deems appropriate. Company will treat any Feedback you provide to Company as non-confidential and non-proprietary. You agree that you will not submit to Company any information or ideas that you consider to be confidential or proprietary.
 
+### 1.8. Consent to Use of Data
+You agree that we may collect and use technical data and related information, including but not limited to technical information about your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Services. We may use this information in accordance with our Privacy Policy.
+
+**Data Collection and Analytics:** You consent to our collection and use of data for analytics, performance monitoring, and service improvement purposes. This may include:
+- Usage statistics and patterns
+- Performance metrics and crash reports
+- Device and system information
+- User interaction data
+
+**Marketing and Communications:** You consent to receive communications from us, including marketing materials, service updates, and promotional offers. You can opt-out of marketing communications at any time by following the unsubscribe instructions in our emails or by contacting us directly.
+
+**Third-Party Services:** You acknowledge that we may use third-party services for analytics, advertising, and other purposes. These services may collect and process your data in accordance with their own privacy policies. We encourage you to review the privacy policies of these third-party services.
+
+**Data Retention:** We will retain your data in accordance with our Privacy Policy and applicable data protection laws. You may request deletion of your data at any time by contacting us.
+
 ## 2. Indemnification
 
 You agree to indemnify and hold Company (and its officers, employees, and agents) harmless, including costs and attorneys' fees, from any claim or demand made by any third party due to or arising out of (a) your use of the Site, (b) your violation of these Terms or (c) your violation of applicable laws or regulations. Company reserves the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate with our defense of these claims. You agree not to settle any matter without the prior written consent of Company. Company will use reasonable efforts to notify you of any such claim, action or proceeding upon becoming aware of it.
