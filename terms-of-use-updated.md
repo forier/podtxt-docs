@@ -229,6 +229,27 @@ We will update our Privacy Nutrition Labels in App Store Connect whenever we mak
 **App Store Guidelines:**
 Our app and these Terms comply with Apple App Store Review Guidelines. We are responsible for the content, privacy, and security of our app, regardless of Apple's review process.
 
+### 7.9. Google Play Data Safety Compliance
+
+**Data Safety Requirements:**
+Our app complies with Google Play Data Safety requirements. We provide transparent information about:
+
+**Data Collection:** We collect account information, device data, usage statistics, and user content to provide our services.
+
+**Data Usage:** We use collected data for app functionality, account management, customer support, app improvement, and security purposes.
+
+**Data Sharing:** We may share data with trusted third-party service providers for payment processing, analytics, cloud services, and customer support.
+
+**Data Security:** We implement comprehensive security measures including encryption, access controls, regular audits, and monitoring.
+
+**Data Rights:** You have rights to access, correct, delete, and export your personal data. You can also opt out of certain data collection and sharing.
+
+**Play Store Updates:**
+We will update our Data Safety information in Google Play Console whenever we make material changes to our data practices. These updates will be reflected in new app versions.
+
+**Play Store Guidelines:**
+Our app and these Terms comply with Google Play Developer Program Policies. We are responsible for the content, privacy, and security of our app, regardless of Google's review process.
+
 ### 7.9. Contact Information
 Ampera SA
 Lugano, Switzerland

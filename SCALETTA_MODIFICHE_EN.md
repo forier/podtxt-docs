@@ -96,12 +96,12 @@
 - [x] Update labels with each new app version
 
 ### 3.2 Google Play Data Safety
-- [ ] Prepare Data Safety section in Play Console:
-  - [ ] Types of data collected
-  - [ ] Collection purposes
-  - [ ] Third-party sharing
-  - [ ] Data security
-- [ ] Attach Privacy Policy link in every update
+- [x] Prepare Data Safety section in Play Console:
+  - [x] Types of data collected
+  - [x] Collection purposes
+  - [x] Third-party sharing
+  - [x] Data security
+- [x] Attach Privacy Policy link in every update
 
 ---
 
@@ -185,11 +185,12 @@
 - [x] 2.6 Data Subject Rights
 - [x] 2.7 Dispute Resolution
 - [x] 3.1 Apple App Store & Privacy Nutrition Labels
+- [x] 3.2 Google Play Data Safety
 - [x] 8.1 Repository Setup
 - [x] 8.2 Commit Flow
 
 ### Pending Tasks ⏳
-- [ ] 3.2 Google Play Data Safety
+- [ ] 4.1 iOS Info.plist
 - [ ] 2.7 Dispute Resolution
 - [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 3.2 Google Play Data Safety
@@ -216,4 +217,4 @@
 ---
 
 *Last updated: April 28, 2025*
-*Status: 10/18 tasks completed (55.6%)* 
+*Status: 11/18 tasks completed (61.1%)* 

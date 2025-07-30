@@ -116,13 +116,13 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 - [x] Assicurarsi che le dichiarazioni in App Store Connect corrispondano esattamente alle policy
 - [x] Aggiornare le labels ad ogni nuova versione dell'app
 
-### 3.2 Google Play Data Safety
-- [ ] Preparare la sezione Data safety nel Play Console:
-  - [ ] Tipologie di dati raccolti
-  - [ ] Finalità di raccolta
-  - [ ] Condivisione con terze parti
-  - [ ] Sicurezza dei dati
-- [ ] Allegare il link alla Privacy Policy in ogni aggiornamento
+### 3.2 Google Play Data Safety ✅ COMPLETATO
+- [x] Preparare la sezione Data safety nel Play Console:
+  - [x] Tipologie di dati raccolti
+  - [x] Finalità di raccolta
+  - [x] Condivisione con terze parti
+  - [x] Sicurezza dei dati
+- [x] Allegare il link alla Privacy Policy in ogni aggiornamento
 
 ---
 

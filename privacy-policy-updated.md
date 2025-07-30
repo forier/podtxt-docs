@@ -551,7 +551,102 @@ If you have questions about our data practices or Privacy Nutrition Labels, plea
 - In-app: Privacy settings section
 - Website: [Privacy Policy page]
 
-## 11. CONTROLS FOR DO-NOT-TRACK FEATURES
+## 11. GOOGLE PLAY DATA SAFETY
+
+**In Short: This section provides information about data collection and usage in compliance with Google Play Data Safety requirements.**
+
+To comply with Google Play Data Safety requirements and provide transparency about our data practices, we have categorized our data collection and usage according to Google's Data Safety framework.
+
+### 11.1. Data Collection and Usage
+
+**Personal Information We Collect:**
+- **Account Information:** Email address, username, profile information
+- **Device Information:** Device ID, operating system, app version
+- **Usage Data:** App interactions, feature usage, session duration
+- **Payment Information:** Subscription status, payment method (processed securely)
+- **User Content:** Messages, comments, uploaded files
+- **Technical Data:** Crash reports, performance metrics, diagnostic information
+
+**How We Use Your Data:**
+- **App Functionality:** To provide and maintain our services
+- **Account Management:** To manage your account and subscriptions
+- **Customer Support:** To respond to your inquiries and provide assistance
+- **App Improvement:** To analyze usage patterns and improve our app
+- **Security:** To protect against fraud and ensure app security
+- **Legal Compliance:** To comply with applicable laws and regulations
+
+### 11.2. Data Sharing Practices
+
+**Third-Party Service Providers:**
+We may share data with trusted third-party service providers who assist us in:
+- **Payment Processing:** Stripe, PayPal, Google Pay, Apple Pay
+- **Analytics:** Google Analytics, Firebase Analytics
+- **Cloud Services:** AWS, Google Cloud Platform
+- **Customer Support:** Zendesk, Intercom
+- **Marketing:** Mailchimp, SendGrid
+
+**Data Sharing Limitations:**
+- We only share data necessary for service provision
+- All third-party providers are contractually bound to protect your data
+- We do not sell your personal information to third parties
+- We do not share data for advertising purposes without your consent
+
+### 11.3. Data Security Measures
+
+**Technical Security:**
+- **Encryption:** All data is encrypted in transit and at rest
+- **Access Controls:** Strict access controls and authentication
+- **Regular Audits:** Security audits and vulnerability assessments
+- **Monitoring:** 24/7 monitoring for suspicious activities
+
+**Organizational Security:**
+- **Staff Training:** Regular training on data protection
+- **Incident Response:** Procedures for data breach response
+- **Vendor Assessment:** Security assessments of third-party providers
+- **Compliance Monitoring:** Regular compliance checks and updates
+
+### 11.4. Your Data Rights
+
+**Access and Control:**
+- **Data Access:** Request a copy of your personal data
+- **Data Correction:** Update or correct your personal information
+- **Data Deletion:** Request deletion of your personal data
+- **Data Portability:** Export your data in a portable format
+- **Opt-out:** Opt out of certain data collection and sharing
+
+**Contact Information:**
+For data-related requests, contact us at:
+- Email: support@podtxt.com
+- In-app: Privacy settings section
+- Website: [Privacy Policy page]
+
+### 11.5. Data Retention
+
+**Retention Periods:**
+- **Account Data:** Retained while your account is active, deleted within 30 days of account closure
+- **Usage Data:** Retained for up to 12 months for analytics purposes
+- **Payment Data:** Retained for 7 years for tax and accounting purposes
+- **Support Data:** Retained for up to 3 years for customer service purposes
+
+**Data Deletion:**
+- You can request deletion of your data at any time
+- We will delete your data within 30 days of your request
+- Some data may be retained for legal or security purposes
+
+### 11.6. Updates to Data Safety Information
+
+**Policy Updates:**
+We will update our Data Safety information whenever we make material changes to our data practices. Updates will be reflected in:
+- New app versions
+- Updated privacy policy
+- Google Play Console Data Safety section
+
+**Notification of Changes:**
+- You will be notified of material changes through app updates
+- Significant changes will be communicated via email or in-app notification
+- Updated privacy policy will be available in the app and on our website
+
+## 12. CONTROLS FOR DO-NOT-TRACK FEATURES
 
 Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
 
