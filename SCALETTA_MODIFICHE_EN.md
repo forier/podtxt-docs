@@ -79,9 +79,9 @@
   - [x] Contact methods
 
 ### 2.7 Dispute Resolution
-- [ ] Streamline arbitration and liability limitation clauses
-- [ ] Move details to appendices if necessary
-- [ ] Maintain synthetic reference in main document
+- [x] Streamline arbitration and liability limitation clauses
+- [x] Move details to appendices if necessary
+- [x] Maintain synthetic reference in main document
 
 ---
 
@@ -183,11 +183,12 @@
 - [x] 2.4 Third-Party Sharing
 - [x] 2.5 Security Measures
 - [x] 2.6 Data Subject Rights
+- [x] 2.7 Dispute Resolution
 - [x] 8.1 Repository Setup
 - [x] 8.2 Commit Flow
 
 ### Pending Tasks ⏳
-- [ ] 2.7 Dispute Resolution
+- [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 2.7 Dispute Resolution
 - [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 3.2 Google Play Data Safety
@@ -214,4 +215,4 @@
 ---
 
 *Last updated: April 28, 2025*
-*Status: 8/18 tasks completed (44.4%)* 
+*Status: 9/18 tasks completed (50.0%)* 

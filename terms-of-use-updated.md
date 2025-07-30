@@ -146,39 +146,56 @@ Subject to this Section, these Terms will remain in full force and effect while 
 These Terms are subject to occasional revision, and if we make any substantial changes, we may notify you by sending you an e-mail to the last e-mail address you provided to us (if any), and/or by prominently posting notice of the changes on our Site. You are responsible for providing us with your most current e-mail address. In the event that the last e-mail address that you have provided us is not valid, or for any reason is not capable of delivering to you the notice described above, our dispatch of the e-mail containing such notice will nonetheless constitute effective notice of the changes described in the notice. Continued use of our Site following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes.
 
 ### 7.2. Dispute Resolution
-Please read this Section 8.2 (sometimes referred to herein as this "Arbitration Agreement") carefully. It is part of your contract with Company and affects your rights. It contains procedures for MANDATORY BINDING ARBITRATION AND A CLASS ACTION WAIVER.
 
-#### Applicability of Arbitration Agreement
-All claims and disputes (excluding claims for injunctive or other equitable relief as set forth below) in connection with these Terms or the use of any product or service provided by the Company that cannot be resolved informally or in small claims court shall be resolved by binding arbitration on an individual basis under the terms of this Arbitration Agreement. Unless otherwise agreed to, all arbitration proceedings shall be held in English. This Arbitration Agreement applies to you and the Company, and to any subsidiaries, affiliates, agents, employees, predecessors in interest, successors, and assigns, as well as all authorized or unauthorized users or beneficiaries of services or goods provided under these Terms.
+**In Short: Any disputes between you and Company will be resolved through binding arbitration, with limited exceptions.**
 
-#### Notice Requirement and Informal Dispute Resolution
-Before either party may seek arbitration, the party must first send to the other party a written Notice of Dispute ("Notice") describing the nature and basis of the claim or dispute, and the requested relief. A Notice to the Company should be sent to: 16192 Coastal Highway, Lewes, County of Sussex, Delaware 19958. After the Notice is received, you and the Company may attempt to resolve the claim or dispute informally. If you and the Company do not resolve the claim or dispute within thirty (30) days after the Notice is received, either party may begin an arbitration proceeding. The amount of any settlement offer made by any party may not be disclosed to the arbitrator until after the arbitrator has determined the amount of the award, if any, to which either party is entitled.
+Please read this Section 7.2 carefully. It is part of your contract with Company and affects your rights. It contains procedures for MANDATORY BINDING ARBITRATION AND A CLASS ACTION WAIVER.
 
-#### Arbitration Rules
-The Federal Arbitration Act governs the interpretation and enforcement of this Arbitration Agreement. The arbitration will be conducted by JAMS, an established alternative dispute resolution provider. Disputes involving claims, counterclaims, or request for relief under $250,000, not inclusive of attorneys' fees and interest, shall be subject to JAMS's most current version of the Streamlined Arbitration Rules and procedures available at http://www.jamsadr.com/rules-streamlined-arbitration/; all other disputes shall be subject to JAMS's most current version of the Comprehensive Arbitration Rules and Procedures, available at http://www.jamsadr.com/rules-comprehensive-arbitration/. JAMS's rules are also available at www.jamsadr.com or by calling JAMS at 800-352-5267. If JAMS is not available to arbitrate, the parties will select an alternative arbitral forum. Each party shall bear its own costs (including attorney's fees) and disbursements arising out of the arbitration and shall pay an equal share of the fees and costs of the ADR Provider.
+#### 7.2.1. Applicability of Arbitration Agreement
 
-You may choose to have the arbitration conducted by telephone, based on written submissions, or in person in the country where you live or at another mutually agreed location. Any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction.
+All claims and disputes (excluding claims for injunctive or other equitable relief) in connection with these Terms or the use of any product or service provided by the Company that cannot be resolved informally or in small claims court shall be resolved by binding arbitration on an individual basis.
 
-#### Authority of Arbitrator
-The arbitrator shall have exclusive authority to (i) determine the scope and enforceability of this Arbitration Agreement and (ii) resolve any dispute related to the interpretation, applicability, enforceability or formation of this Arbitration Agreement including, but not limited to, any assertion that all or any part of this Arbitration Agreement is void or voidable. The arbitration will decide the rights and liabilities, if any, of you and Company. The arbitration proceeding will not be consolidated with any other matters or joined with any other cases or parties. The arbitrator shall have the authority to grant motions dispositive of all or part of any claim. The arbitrator shall have the authority to award monetary damages and to grant any non-monetary remedy or relief available to an individual under applicable law, the arbitral forum's rules, and these Terms (including the Arbitration Agreement). The arbitrator shall issue a written award and statement of decision describing the essential findings and conclusions on which the award is based, including the calculation of any damages awarded. The arbitrator has the same authority to award relief on an individual basis that a judge in a court of law would have. The award of the arbitrator is final and binding upon you and us.
+This Arbitration Agreement applies to you and the Company, and to any subsidiaries, affiliates, agents, employees, predecessors in interest, successors, and assigns.
 
-#### Waiver of Jury Trial
-YOU AND COMPANY HEREBY WAIVE ANY CONSTITUTIONAL AND STATUTORY RIGHTS TO SUE IN COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY. You and Company are instead electing that all disputes, claims, or requests for relief shall be resolved by arbitration under this Arbitration Agreement, except as specified in Section 8.2(a) (Applicability of Arbitration Agreement) above. An arbitrator can award on an individual basis the same damages and relief as a court and must follow these Terms as a court would. However, there is no judge or jury in arbitration, and court review of an arbitration award is subject to very limited review.
+#### 7.2.2. Notice Requirement and Informal Dispute Resolution
 
-#### Waiver of Class or Other Non-Individualized Relief
-ALL DISPUTES, CLAIMS, AND REQUESTS FOR RELIEF WITHIN THE SCOPE OF THIS ARBITRATION AGREEMENT MUST BE ARBITRATED ON AN INDIVIDUAL BASIS AND NOT ON A CLASS OR COLLECTIVE BASIS, ONLY INDIVIDUAL RELIEF IS AVAILABLE, AND CLAIMS OF MORE THAN ONE CUSTOMER OR USER CANNOT BE ARBITRATED OR CONSOLIDATED WITH THOSE OF ANY OTHER CUSTOMER OR USER. If a decision is issued stating that applicable law precludes enforcement of any of this section's limitations as to a given dispute, claim, or request for relief, then such aspect must be severed from the arbitration and brought into the State or Federal Courts located in the State of Delaware. All other disputes, claims, or requests for relief shall be arbitrated.
+Before either party may seek arbitration, the party must first send to the other party a written Notice of Dispute ("Notice") describing the nature and basis of the claim or dispute, and the requested relief. A Notice to the Company should be sent to: support@podtxt.com.
 
-#### 30-Day Right to Opt Out
-You have the right to opt out of the provisions of this Arbitration Agreement by sending written notice of your decision to opt out to: support@podtxt.com, within thirty (30) days after first becoming subject to this Arbitration Agreement. Your notice must include your name and address, your Company username (if any), the email address you used to set up your Company account (if you have one), and an unequivocal statement that you want to opt out of this Arbitration Agreement. If you opt out of this Arbitration Agreement, all other parts of these Terms will continue to apply to you. Opting out of this Arbitration Agreement has no effect on any other arbitration agreements that you may currently have, or may enter in the future, with us.
+After the Notice is received, you and the Company may attempt to resolve the claim or dispute informally. If you and the Company do not resolve the claim or dispute within thirty (30) days after the Notice is received, either party may begin an arbitration proceeding.
 
-#### Severability
-Except as provided in Section 8.2(f) (Waiver of Class or Other Non-Individualized Relief), if any part or parts of this Arbitration Agreement are found under the law to be invalid or unenforceable, then such specific part or parts shall be of no force and effect and shall be severed and the remainder of the Arbitration Agreement shall continue in full force and effect.
+#### 7.2.3. Arbitration Rules
 
-#### Survival of Agreement
+The Federal Arbitration Act governs the interpretation and enforcement of this Arbitration Agreement. The arbitration will be conducted by JAMS, an established alternative dispute resolution provider. Disputes involving claims under $250,000 shall be subject to JAMS's Streamlined Arbitration Rules; all other disputes shall be subject to JAMS's Comprehensive Arbitration Rules and Procedures.
+
+#### 7.2.4. Authority of Arbitrator
+
+The arbitrator shall have exclusive authority to:
+- Determine the scope and enforceability of this Arbitration Agreement
+- Resolve any dispute related to the interpretation, applicability, enforceability or formation of this Arbitration Agreement
+- Grant motions dispositive of all or part of any claim
+- Award monetary damages and grant any non-monetary remedy or relief available to an individual under applicable law
+
+#### 7.2.5. Waiver of Jury Trial
+
+YOU AND COMPANY HEREBY WAIVE ANY CONSTITUTIONAL AND STATUTORY RIGHTS TO SUE IN COURT AND HAVE A TRIAL IN FRONT OF A JUDGE OR A JURY. You and Company are instead electing that all disputes, claims, or requests for relief shall be resolved by arbitration under this Arbitration Agreement.
+
+#### 7.2.6. Waiver of Class or Other Non-Individualized Relief
+
+ALL DISPUTES, CLAIMS, AND REQUESTS FOR RELIEF WITHIN THE SCOPE OF THIS ARBITRATION AGREEMENT MUST BE ARBITRATED ON AN INDIVIDUAL BASIS AND NOT ON A CLASS OR COLLECTIVE BASIS. ONLY INDIVIDUAL RELIEF IS AVAILABLE, AND CLAIMS OF MORE THAN ONE CUSTOMER OR USER CANNOT BE ARBITRATED OR CONSOLIDATED WITH THOSE OF ANY OTHER CUSTOMER OR USER.
+
+#### 7.2.7. 30-Day Right to Opt Out
+
+You have the right to opt out of the provisions of this Arbitration Agreement by sending written notice of your decision to opt out to: support@podtxt.com, within thirty (30) days after first becoming subject to this Arbitration Agreement. Your notice must include your name and address, your Company username (if any), the email address you used to set up your Company account (if you have one), and an unequivocal statement that you want to opt out of this Arbitration Agreement.
+
+#### 7.2.8. Severability
+
+If any part or parts of this Arbitration Agreement are found under the law to be invalid or unenforceable, then such specific part or parts shall be of no force and effect and shall be severed and the remainder of the Arbitration Agreement shall continue in full force and effect.
+
+#### 7.2.9. Survival of Agreement
+
 This Arbitration Agreement will survive the termination of your relationship with Company.
 
-#### Modification
-Notwithstanding any provision in these Terms to the contrary, we agree that if Company makes any future material change to this Arbitration Agreement, you may reject that change within thirty (30) days of such change becoming effective by writing Company at the following address: support@podtxt.com.
+**For the complete and detailed Arbitration Agreement, please refer to our full Dispute Resolution Policy available at [link to detailed policy].**
 
 ### 7.3. Export
 The Site may be subject to U.S. export control laws and may be subject to export or import regulations in other countries. You agree not to export, reexport, or transfer, directly or indirectly, any U.S. technical data acquired from Company, or any products utilizing such data, in violation of the United States export laws or regulations.

@@ -99,10 +99,10 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] Tempi di risposta (max 30 giorni)
   - [x] Modalità di contatto
 
-### 2.7 Risoluzione delle Controversie
-- [ ] Snellire le clausole di arbitrato e limitazione di responsabilità
-- [ ] Spostare dettagli in allegati se necessario
-- [ ] Mantenere riferimento sintetico nel documento principale
+### 2.7 Risoluzione delle Controversie ✅ COMPLETATO
+- [x] Snellire le clausole di arbitrato e limitazione di responsabilità
+- [x] Spostare dettagli in allegati se necessario
+- [x] Mantenere riferimento sintetico nel documento principale
 
 ---
 
