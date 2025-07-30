@@ -66,15 +66,17 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] Local storage e session storage
 
 ### 2.4 Condivisione con Terze Parti
-- [ ] Elencare i service provider e le categorie di terze parti:
-  - [ ] Firebase (analytics, crash reporting)
-  - [ ] Stripe (pagamenti)
-  - [ ] AWS/Google Cloud (hosting)
-  - [ ] Altri service provider
-- [ ] Descrivere:
-  - [ ] Misure di sicurezza adottate
-  - [ ] Accordi di data processing con i sub-processor
-  - [ ] Trasferimenti internazionali di dati
+- [x] Elencare i service provider e le categorie di terze parti:
+  - [x] Payment processors (Stripe, PayPal, Apple Pay, Google Pay)
+  - [x] Analytics services (Google Analytics, Firebase)
+  - [x] Cloud storage (AWS, Google Cloud)
+  - [x] Customer support tools (Zendesk, Intercom)
+  - [x] Marketing platforms (Mailchimp, SendGrid)
+  - [x] App store platforms (Apple App Store, Google Play)
+- [x] Descrivere:
+  - [x] Misure di sicurezza adottate
+  - [x] Accordi di data processing con i sub-processor
+  - [x] Trasferimenti internazionali di dati
 
 ### 2.5 Misure di Sicurezza
 - [ ] Sintetizzare le misure organizzative e tecniche:

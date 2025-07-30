@@ -171,9 +171,44 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 
 **In Short: We may share information in specific situations described in this section and/or with the following third parties.**
 
-We may need to share your personal information in the following situations:
+We may share your personal information with third parties in the following circumstances:
 
-- **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+### 4.1. Service Providers and Third-Party Processors
+
+We disclose your personal information to our employees, contractors, affiliates, distributors, dealers, vendors and suppliers ("Service Providers") who provide certain services to us or on our behalf, such as:
+
+- **Payment Processors:** Stripe, PayPal, Apple Pay, Google Pay for processing subscription payments
+- **Analytics Services:** Google Analytics, Firebase Analytics for app usage analytics
+- **Cloud Storage:** AWS, Google Cloud Platform for data storage and hosting
+- **Customer Support:** Zendesk, Intercom for customer service management
+- **Marketing Tools:** Mailchimp, SendGrid for email marketing
+- **App Store Platforms:** Apple App Store, Google Play Store for app distribution
+
+These Service Providers will only have access to the personal information needed to perform these limited functions on our behalf and are contractually bound to protect your data.
+
+### 4.2. Business Transfers
+
+We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company. In such cases, we will notify you via email or a prominent notice within our Services of any change in ownership or uses of your personal information.
+
+### 4.3. Legal Requirements and Protection
+
+We may disclose your personal information if:
+- Required to do so by law, or in response to a subpoena or court order
+- We believe disclosure is reasonably necessary to protect against fraud
+- To protect the property or other rights of us or other users
+- To comply with legal obligations or enforce our agreements
+
+### 4.4. Affiliates
+
+We may share your information with our affiliates, in which case we will require those affiliates to honor this privacy notice. Affiliates include our parent company and any subsidiaries, joint venture partners, or other companies that we control or that are under common control with us.
+
+### 4.5. Third-Party Business Partners
+
+We may work with and share some of your information with our third-party advertising partners to provide you with advertisements or other tailored content. We may share information related to users of our service with affiliates or unaffiliated third parties on a de-identified, aggregate basis.
+
+### 4.6. Data Processing Agreements
+
+For users in the European Economic Area, United Kingdom and Switzerland, we ensure that all third-party processors are bound by appropriate data processing agreements that comply with GDPR requirements.
 
 ## 5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
 

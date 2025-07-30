@@ -44,6 +44,17 @@ You acknowledge that all the intellectual property rights, including copyrights,
 ### 1.6. Feedback
 If you provide Company with any feedback or suggestions regarding the Site ("Feedback"), you hereby assign to Company all rights in such Feedback and agree that Company shall have the right to use and fully exploit such Feedback and related information in any manner it deems appropriate. Company will treat any Feedback you provide to Company as non-confidential and non-proprietary. You agree that you will not submit to Company any information or ideas that you consider to be confidential or proprietary.
 
+### 1.7. Third-Party Service Providers
+We may use third-party service providers to help us provide, maintain, and improve our Services. These service providers may include:
+
+- **Payment Processors:** For processing subscription payments and transactions
+- **Analytics Services:** For understanding how our Services are used
+- **Cloud Storage Providers:** For storing and managing data
+- **Customer Support Tools:** For providing customer service
+- **Marketing Platforms:** For communication and marketing activities
+
+These service providers are contractually bound to protect your information and may only use it for the specific purposes for which we engage them. We remain responsible for the protection of your personal information that we share with these service providers.
+
 ### 1.8. Consent to Use of Data
 You agree that we may collect and use technical data and related information, including but not limited to technical information about your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Services. We may use this information in accordance with our Privacy Policy.
 
