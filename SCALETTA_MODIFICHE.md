@@ -78,13 +78,13 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] Accordi di data processing con i sub-processor
   - [x] Trasferimenti internazionali di dati
 
-### 2.5 Misure di Sicurezza
-- [ ] Sintetizzare le misure organizzative e tecniche:
-  - [ ] Encryption in transit e at rest
-  - [ ] Backup e disaster recovery
-  - [ ] Access controls e authentication
-  - [ ] Security audits e monitoring
-- [ ] Includere disclaimer sulla sicurezza ("non garantiamo il 100% di protezione")
+### 2.5 Misure di Sicurezza ✅ COMPLETATO
+- [x] Sintetizzare le misure organizzative e tecniche:
+  - [x] Encryption in transit e at rest
+  - [x] Backup e disaster recovery
+  - [x] Access controls e authentication
+  - [x] Security audits e monitoring
+- [x] Includere disclaimer sulla sicurezza ("non garantiamo il 100% di protezione")
 
 ### 2.6 Diritti degli Interessati
 - [ ] Ampliare le modalità di esercizio dei diritti GDPR:

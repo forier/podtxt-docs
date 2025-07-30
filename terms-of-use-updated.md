@@ -55,6 +55,29 @@ We may use third-party service providers to help us provide, maintain, and impro
 
 These service providers are contractually bound to protect your information and may only use it for the specific purposes for which we engage them. We remain responsible for the protection of your personal information that we share with these service providers.
 
+### 1.8. Security and Data Protection
+We implement comprehensive security measures to protect your information:
+
+**Technical Security:**
+- Encryption of data in transit and at rest
+- Secure authentication and access controls
+- Regular security audits and vulnerability assessments
+- 24/7 monitoring and threat detection
+
+**Organizational Security:**
+- Staff training on data protection and security
+- Incident response procedures
+- Regular backup and disaster recovery testing
+- Vendor security assessments
+
+**Your Security Responsibilities:**
+- Maintain strong, unique passwords
+- Keep your device and apps updated
+- Use secure networks when accessing our Services
+- Report security concerns immediately
+
+While we implement robust security measures, no system is 100% secure. We cannot guarantee absolute protection against all security threats, and you acknowledge that transmission of data to and from our Services involves inherent security risks.
+
 ### 1.8. Consent to Use of Data
 You agree that we may collect and use technical data and related information, including but not limited to technical information about your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Services. We may use this information in accordance with our Privacy Policy.
 

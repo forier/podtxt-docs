@@ -286,7 +286,58 @@ When we have no ongoing legitimate business need to process your personal inform
 
 **In Short: We aim to protect your personal information through a system of organizational and technical security measures.**
 
-We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
+We are committed to ensuring the security of your personal information. We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process.
+
+### 7.1. Technical Security Measures
+
+**Encryption:**
+- **In Transit:** All data transmitted between your device and our servers is encrypted using industry-standard TLS/SSL protocols
+- **At Rest:** Personal information stored in our databases is encrypted using AES-256 encryption
+- **Payment Data:** All payment information is encrypted and processed through PCI DSS compliant payment processors
+
+**Access Controls:**
+- Multi-factor authentication for administrative access
+- Role-based access controls limiting data access to authorized personnel only
+- Regular access reviews and privilege management
+- Secure authentication protocols for user accounts
+
+**Infrastructure Security:**
+- Hosted on secure cloud infrastructure with regular security updates
+- Firewall protection and intrusion detection systems
+- Regular security audits and vulnerability assessments
+- 24/7 monitoring for suspicious activities
+
+### 7.2. Organizational Security Measures
+
+**Data Protection Policies:**
+- Comprehensive data protection and privacy policies
+- Regular staff training on data security and privacy
+- Incident response procedures and breach notification protocols
+- Vendor security assessments and data processing agreements
+
+**Backup and Recovery:**
+- Regular automated backups with encryption
+- Disaster recovery procedures and business continuity plans
+- Geographic redundancy for critical data
+- Regular testing of backup and recovery procedures
+
+**Monitoring and Auditing:**
+- Continuous monitoring of system access and data usage
+- Regular security audits and penetration testing
+- Log monitoring and analysis for security incidents
+- Compliance monitoring and reporting
+
+### 7.3. Security Disclaimer
+
+Despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. We cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.
+
+**Your Role in Security:**
+- Choose strong, unique passwords for your account
+- Keep your device and apps updated with the latest security patches
+- Be cautious when accessing our Services on public networks
+- Report any suspicious activities immediately to support@podtxt.com
+
+Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
 
 ## 8. DO WE COLLECT INFORMATION FROM MINORS?
 
