@@ -86,18 +86,18 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] Security audits e monitoring
 - [x] Includere disclaimer sulla sicurezza ("non garantiamo il 100% di protezione")
 
-### 2.6 Diritti degli Interessati
-- [ ] Ampliare le modalità di esercizio dei diritti GDPR:
-  - [ ] Diritto di accesso
-  - [ ] Diritto di rettifica
-  - [ ] Diritto di cancellazione (right to be forgotten)
-  - [ ] Diritto alla portabilità dei dati
-  - [ ] Diritto di limitazione del trattamento
-  - [ ] Diritto di opposizione
-- [ ] Dettagliare:
-  - [ ] Processo di verifica dell'identità
-  - [ ] Tempi di risposta (max 30 giorni)
-  - [ ] Modalità di contatto
+### 2.6 Diritti degli Interessati ✅ COMPLETATO
+- [x] Ampliare le modalità di esercizio dei diritti GDPR:
+  - [x] Diritto di accesso
+  - [x] Diritto di rettifica
+  - [x] Diritto di cancellazione (right to be forgotten)
+  - [x] Diritto alla portabilità dei dati
+  - [x] Diritto di limitazione del trattamento
+  - [x] Diritto di opposizione
+- [x] Dettagliare:
+  - [x] Processo di verifica dell'identità
+  - [x] Tempi di risposta (max 30 giorni)
+  - [x] Modalità di contatto
 
 ### 2.7 Risoluzione delle Controversie
 - [ ] Snellire le clausole di arbitrato e limitazione di responsabilità

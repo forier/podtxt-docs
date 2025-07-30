@@ -78,6 +78,23 @@ We implement comprehensive security measures to protect your information:
 
 While we implement robust security measures, no system is 100% secure. We cannot guarantee absolute protection against all security threats, and you acknowledge that transmission of data to and from our Services involves inherent security risks.
 
+### 1.9. Your Rights and Data Protection
+
+**Data Subject Rights:** You have certain rights regarding your personal information, including:
+- Right to access your personal information
+- Right to correct inaccurate information
+- Right to delete your personal information
+- Right to restrict processing
+- Right to data portability
+- Right to object to processing
+- Right to withdraw consent
+
+**Exercise of Rights:** You can exercise these rights by contacting us at support@podtxt.com. We will respond to your request within 30 days, unless the request is complex or we receive multiple requests from you.
+
+**Identity Verification:** We may require you to verify your identity before processing certain requests to protect your privacy and security.
+
+**Complaints:** If you believe we have violated your privacy rights, you have the right to lodge a complaint with the relevant supervisory authority in your jurisdiction.
+
 ### 1.8. Consent to Use of Data
 You agree that we may collect and use technical data and related information, including but not limited to technical information about your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Services. We may use this information in accordance with our Privacy Policy.
 

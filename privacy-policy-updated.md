@@ -349,6 +349,77 @@ We do not knowingly solicit data from or market to children under 18 years of ag
 
 **In Short: In some regions, such as the European Economic Area (EEA), United Kingdom (UK), Canada, and California, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.**
 
+We provide you with comprehensive rights to control your personal information. Please contact us at support@podtxt.com if you would like to exercise your rights under applicable law.
+
+### 9.1. Right to Withdraw Consent
+
+If we rely on consent to process your personal information, you have the right to withdraw your consent at any time. A withdrawal of consent will not affect the lawfulness of our processing or the processing of any third parties based on consent before your withdrawal.
+
+### 9.2. Right of Access and Rectification
+
+**Right of Access:** If you request a copy of your personal information that we hold, we will provide you with a copy without undue delay and free of charge, except where we are permitted by law to charge a fee. We may limit your access if such access would adversely affect the rights and freedoms of other individuals.
+
+**Right of Rectification:** You may request to correct or update any of your personal information held by us, unless you can already do so directly via the Services.
+
+### 9.3. Right to Erasure (Right to be Forgotten)
+
+You may request us to erase any of your personal information held by us that:
+- Is no longer necessary in relation to the purposes for which it was collected or otherwise processed
+- Was collected in relation to processing that you previously consented to, but later withdrew such consent
+- Was collected in relation to processing activities to which you object, and there are no overriding legitimate grounds for our processing
+
+### 9.4. Right to Restriction of Processing
+
+You have the right to restrict our processing of your personal information where one of the following applies:
+- You contest the accuracy of your personal information that we processed
+- The processing is unlawful and you oppose the erasure of your personal information and request the restriction of its use instead
+- We no longer need your personal information for the purposes of the processing, but it is required by you to establish, exercise or defense of legal claims
+- You have objected to processing, pending the verification whether the legitimate grounds of our processing override your rights
+
+### 9.5. Right to Object to Processing
+
+You may object to our processing at any time and as permitted by applicable law if we process your personal information on the legal basis of consent, contract or legitimate interests. We can continue to process your personal information if it is necessary for the defense of legal claims, or for any other exceptions permitted by applicable law.
+
+### 9.6. Right to Data Portability
+
+If we process your personal information based on a contract with you or based on your consent, or the processing is carried out by automated means, you may request to receive your personal information in a structured, commonly used and machine-readable format, and to have us transfer your personal information directly to another "controller", where technically feasible, unless exercise of this right adversely affects the rights and freedoms of others.
+
+### 9.7. Identity Verification Process
+
+When we receive an individual rights request from you, please make sure you are ready to verify your identity. We may require:
+- Proof of identity (government-issued ID, passport, or driver's license)
+- Verification of email address associated with your account
+- Additional security questions or information
+
+### 9.8. Response Times and Contact Methods
+
+**Response Times:** We will respond to your request within 30 days of receipt, unless the request is complex or we receive multiple requests from you. In such cases, we may extend the response time by up to 60 days, but we will notify you of the extension within 30 days.
+
+**Contact Methods:** You can exercise your rights by:
+- Email: support@podtxt.com
+- Postal mail: [Company Address]
+- In-app: Through the privacy settings in our mobile applications
+
+### 9.9. Limitations to Your Rights
+
+We may limit your individual rights in the following ways:
+- Where denial of access is required or authorized by law
+- When granting access would have a negative impact on others' privacy
+- To protect our rights and properties
+- Where the request is frivolous or burdensome
+
+### 9.10. Notification to Third Parties
+
+If we share your personal information with third parties, we will notify them of any requests for rectification, erasure or restriction of your personal information, unless this proves impossible or involves disproportionate effort. Upon your request, we will identify such third parties.
+
+### 9.11. Automated Decision-Making and Profiling
+
+You have the right not to be subject to a decision based solely on automated processing of your personal information, including profiling, which produces legal or similarly significant effects on you, unless an exception applies under applicable law.
+
+### 9.12. Right to Lodge a Complaint
+
+If you believe we have infringed or violated your privacy rights, please contact us at support@podtxt.com so that we can work to resolve your concerns. You also have a right to lodge a complaint with a competent supervisory authority situated in a Member State of your habitual residence, place of work, or place of alleged infringement.
+
 ### Rights for EEA, UK, and Canada Residents
 In some regions (like the EEA, UK, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" below.
 

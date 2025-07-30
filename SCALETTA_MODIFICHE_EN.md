@@ -66,17 +66,17 @@
 - [x] Include security disclaimer ("we don't guarantee 100% protection")
 
 ### 2.6 Data Subject Rights
-- [ ] Expand GDPR rights exercise methods:
-  - [ ] Right of access
-  - [ ] Right of rectification
-  - [ ] Right of erasure (right to be forgotten)
-  - [ ] Right to data portability
-  - [ ] Right to restriction of processing
-  - [ ] Right to object
-- [ ] Detail:
-  - [ ] Identity verification process
-  - [ ] Response times (max 30 days)
-  - [ ] Contact methods
+- [x] Expand GDPR rights exercise methods:
+  - [x] Right of access
+  - [x] Right of rectification
+  - [x] Right of erasure (right to be forgotten)
+  - [x] Right to data portability
+  - [x] Right to restriction of processing
+  - [x] Right to object
+- [x] Detail:
+  - [x] Identity verification process
+  - [x] Response times (max 30 days)
+  - [x] Contact methods
 
 ### 2.7 Dispute Resolution
 - [ ] Streamline arbitration and liability limitation clauses
@@ -182,11 +182,12 @@
 - [x] 2.3 Cookie Policy & Tracking Technologies
 - [x] 2.4 Third-Party Sharing
 - [x] 2.5 Security Measures
+- [x] 2.6 Data Subject Rights
 - [x] 8.1 Repository Setup
 - [x] 8.2 Commit Flow
 
 ### Pending Tasks ⏳
-- [ ] 2.6 Data Subject Rights
+- [ ] 2.7 Dispute Resolution
 - [ ] 2.7 Dispute Resolution
 - [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 3.2 Google Play Data Safety
@@ -213,4 +214,4 @@
 ---
 
 *Last updated: April 28, 2025*
-*Status: 7/18 tasks completed (38.9%)* 
+*Status: 8/18 tasks completed (44.4%)* 
