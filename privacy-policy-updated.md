@@ -99,6 +99,26 @@ The information we collect includes:
 
 We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
 
+**To provide the Services to you.** We require certain information from you in order to provide you with the Services you requested. Such information may include your contact and device information. We share this information with our service providers or partners to the extent necessary to continue to provide you with the Services. We cannot provide you with Services without such information.
+
+**To provide customer service.** We process your personal information when you contact us to help you with any questions, concerns, disputes or issues, or to provide us with your feedback. Without your personal information, we cannot respond to you or ensure your continued use and enjoyment of the Services.
+
+**To enforce terms, agreements or policies.** To ensure your safety and adherence to our terms, agreements or policies, we may process your personal information to: actively monitor, investigate, prevent and mitigate any alleged or actual prohibited, illicit or illegal activities on our Services; investigate, prevent, or mitigate violations of our terms and policies; enforce our agreements with third parties and partners; and, collect fees based on your use of our Services. We cannot perform our Services in accordance with our terms, agreements or policies without processing your personal information for such purposes.
+
+**To send you Service-related communications.** We use your contact information to send you administrative or account-related information to you to keep you updated about our Services, inform you of relevant security issues or updates, or provide other transaction-related information to you. Service-related communications are not promotional in nature. You cannot unsubscribe from such communications because you could miss important developments relating to your account or the Services that may affect how you can use our Services.
+
+**For security purposes.** We process your personal information to: improve and enforce our security measures; combat spam, malware, malicious activities or security risks; and to monitor and verify your identity so that unauthorized users do not access your account with us. We cannot ensure the security of our Services if we do not process your personal information for security purposes.
+
+**To maintain legal and regulatory compliance.** We process your personal information to pay our taxes or fulfill our other business obligations, and/or to manage risk as required under applicable law. We cannot perform the Services in accordance with our legal and regulatory requirements without processing your personal information for such purposes.
+
+**To personalize your experience on the Services.** We allow you to personalize your experience on our Services via social media plugins on our Services (e.g., Facebook, Google, Instagram, Twitter, etc.), by keeping track of your preferences (e.g., nickname or display name, time zone, language preference, etc.), and more. Without such processing, you may not be able to access or personalize part or all of our Services.
+
+**To conduct research and development.** We process information about the way you use and interact with our Services to: help us improve our Services; build new Services; and build customized features or Services. Such processing ensures your continued enjoyment of part or all of our Services.
+
+**To engage in marketing activities.** We may process your contact information or information about your interactions on our Services to: send you marketing communications; deliver targeted marketing; inform you about events, webinars, or other materials, including those of our partners; and, keep you up-to-date with our relevant products and Services. Transactional communications about your account or our Services are not considered "marketing" communications. You can opt-out of our marketing activities at any time.
+
+**To provide consumption data to Apple.** If we receive a refund request for an in-app purchase from an end user, we reserve the right to provide Apple with information regarding the user's in-app purchase consumption. This includes the following data: app usage time, anonymous account identifier, total amount spent, and total amount refunded.
+
 - To save or protect an individual's vital interest. We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.
 
 ## 3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
@@ -110,8 +130,24 @@ If you are located in the EU or UK, this section applies to you.
 The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:
 
 - **Consent.** We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time.
+- **Contract.** We may process your information where we believe it is necessary to perform our contractual obligations to you, or to take steps at your request prior to entering into a contract with you.
 - **Legal Obligations.** We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.
+- **Legitimate Interests.** We may process your information where we believe it is necessary for our legitimate interests, such as to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law.
 - **Vital Interests.** We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.
+- **Public Interest.** We may process your information where we believe it is necessary to perform a task carried out in the public interest.
+
+**Specific Legal Bases for Each Processing Purpose:**
+
+- **To provide the Services to you:** Contract, Legitimate Interests
+- **To provide customer service:** Contract, Legitimate Interests
+- **To enforce terms, agreements or policies:** Contract, Legitimate Interests, Legal Obligations
+- **To send you Service-related communications:** Contract, Legitimate Interests
+- **For security purposes:** Legitimate Interests, Legal Obligations
+- **To maintain legal and regulatory compliance:** Legal Obligations
+- **To personalize your experience on the Services:** Consent, Legitimate Interests
+- **To conduct research and development:** Legitimate Interests
+- **To engage in marketing activities:** Consent, Legitimate Interests
+- **To provide consumption data to Apple:** Contract, Legal Obligations
 
 If you are located in Canada, this section applies to you.
 
@@ -148,6 +184,20 @@ We may use cookies and similar tracking technologies (like web beacons and pixel
 ## 6. HOW LONG DO WE KEEP YOUR INFORMATION?
 
 **In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.**
+
+We will try to limit the storage of your personal information to the time necessary to serve the purpose(s) for which your personal information was processed, to enforce our agreement, policies or terms, to resolve disputes, or as otherwise required or permitted by law. Please contact us if you have any questions about our retention periods. While retention requirements can vary by country, we generally apply the retention periods noted below.
+
+**Marketing.** We store information used for marketing purposes indefinitely until you unsubscribe. Once you unsubscribe from marketing communications, we add your contact information to our suppression list to ensure we respect your unsubscribe request.
+
+**Your Interactions and Content on Our Services.** We may store any information about your interactions on our Services or any content created, posted or shared by you on our Services (e.g., pictures, comments, support tickets, and other content) indefinitely after the closure your account for the establishment or defense of legal claims, audit and crime prevention purposes.
+
+**Web Behavior Data.** We retain any information collected via cookies, clear gifs, webpage counters and other technical or analytics tools up to one year from expiry of the cookie or the date of collection.
+
+**Telephone Records.** As required by applicable law, we will inform you that a call will be recorded before doing so. Any telephone calls with you may be kept for a period of up to six years.
+
+**Subscription and Payment Data.** We retain subscription and payment information for the duration of your subscription plus 7 years for tax and accounting purposes, as required by applicable law.
+
+**Account Information.** We retain your account information for as long as your account is active and for 3 years after account deletion for security and fraud prevention purposes.
 
 We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements).
 

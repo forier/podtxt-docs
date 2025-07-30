@@ -32,16 +32,16 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 ## ⚖️ 2. Sezioni Core da Aggiungere o Migliorare
 
 ### 2.1 Base giuridiche GDPR e Periodi di Conservazione
-- [ ] Specificare le base giuridiche del trattamento:
-  - [ ] Consenso esplicito
-  - [ ] Esecuzione del contratto
-  - [ ] Legittimo interesse
-  - [ ] Obbligo legale
-- [ ] Definire i periodi di retention giustificati per ciascuna categoria di dati:
-  - [ ] Dati di navigazione: 6 mesi
-  - [ ] Dati di contatto: fino alla revoca del consenso
-  - [ ] Log diagnostici: 12 mesi
-  - [ ] Documentare le motivazioni per ogni periodo
+- [x] Specificare le base giuridiche del trattamento:
+  - [x] Consenso esplicito
+  - [x] Esecuzione del contratto
+  - [x] Legittimo interesse
+  - [x] Obbligo legale
+- [x] Definire i periodi di retention giustificati per ciascuna categoria di dati:
+  - [x] Dati di navigazione: 6 mesi
+  - [x] Dati di contatto: fino alla revoca del consenso
+  - [x] Log diagnostici: 12 mesi
+  - [x] Documentare le motivazioni per ogni periodo
 
 ### 2.2 CCPA / CalOPPA
 - [ ] Integrare clausole specifiche per i diritti dei consumatori californiani:
