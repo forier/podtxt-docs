@@ -242,23 +242,23 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 
 ## 🎯 10. Prossimi Passi
 
-### Fase 1: Preparazione (Settimana 1)
+### Fase 1: Preparazione
 - [ ] Analisi dettagliata dei documenti attuali
 - [ ] Identificazione gap di conformità
 - [ ] Definizione priorità modifiche
 
-### Fase 2: Implementazione (Settimana 2-3)
+### Fase 2: Implementazione
 - [ ] Aggiornamento Privacy Policy
 - [ ] Aggiornamento Terms of Use
 - [ ] Creazione Cookie Policy
 - [ ] Creazione EULA
 
-### Fase 3: Localizzazione (Settimana 4)
+### Fase 3: Localizzazione
 - [ ] Traduzione in italiano
 - [ ] Traduzione in cinese
 - [ ] Review legale traduzioni
 
-### Fase 4: Testing e Deploy (Settimana 5)
+### Fase 4: Testing e Deploy
 - [ ] Test integrazione app
 - [ ] Verifica link e WebView
 - [ ] Aggiornamento store
@@ -281,5 +281,4 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 
 ---
 
-**Ultimo aggiornamento**: 28 Aprile 2025  
-**Prossima revisione**: 5 Maggio 2025 
+**Ultimo aggiornamento**: 28 Aprile 2025 
