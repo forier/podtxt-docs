@@ -44,15 +44,15 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] Documentare le motivazioni per ogni periodo
 
 ### 2.2 CCPA / CalOPPA
-- [ ] Integrare clausole specifiche per i diritti dei consumatori californiani:
-  - [ ] Shine The Light Law (Sezione 1798.83)
-  - [ ] Right to Know (diritto di sapere)
-  - [ ] Right to Delete (diritto di cancellazione)
-  - [ ] Right to Opt-Out (diritto di rinuncia)
-- [ ] Aggiungere informazioni su:
-  - [ ] Arricchimento dati
-  - [ ] Non discriminazione in base all'esercizio dei diritti
-  - [ ] Processo di verifica dell'identità
+- [x] Integrare clausole specifiche per i diritti dei consumatori californiani:
+  - [x] Shine The Light Law (Sezione 1798.83)
+  - [x] Right to Know (diritto di sapere)
+  - [x] Right to Delete (diritto di cancellazione)
+  - [x] Right to Opt-Out (diritto di rinuncia)
+- [x] Aggiungere informazioni su:
+  - [x] Arricchimento dati
+  - [x] Non discriminazione in base all'esercizio dei diritti
+  - [x] Processo di verifica dell'identità
 
 ### 2.3 Cookie Policy & Tracking Technologies
 - [ ] Creare una sezione dedicata alla Cookie Policy:

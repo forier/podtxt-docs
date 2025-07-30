@@ -217,9 +217,38 @@ We do not knowingly solicit data from or market to children under 18 years of ag
 
 ## 9. WHAT ARE YOUR PRIVACY RIGHTS?
 
-**In Short: In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.**
+**In Short: In some regions, such as the European Economic Area (EEA), United Kingdom (UK), Canada, and California, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.**
 
+### Rights for EEA, UK, and Canada Residents
 In some regions (like the EEA, UK, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" below.
+
+### Rights for California Residents (CCPA/CalOPPA)
+If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA) and California Online Privacy Protection Act (CalOPPA):
+
+**Right to Know (Right to Request Information):** You have the right to request that we disclose to you:
+- The categories of personal information we have collected about you
+- The categories of sources from which the personal information is collected
+- The business or commercial purpose for collecting or selling personal information
+- The categories of third parties with whom we share personal information
+- The specific pieces of personal information we have collected about you
+
+**Right to Delete:** You have the right to request that we delete any personal information about you that we have collected from you and retained, subject to certain exceptions.
+
+**Right to Opt-Out of Sale/Sharing:** You have the right to opt-out of the sale or sharing of your personal information. We do not sell your personal information, but we may share it with third parties for business purposes.
+
+**Right to Non-Discrimination:** We will not discriminate against you for exercising any of your CCPA rights. Unless permitted by the CCPA, we will not:
+- Deny you goods or services
+- Charge you different prices or rates for goods or services, including through granting discounts or other benefits, or imposing penalties
+- Provide you a different level or quality of goods or services
+- Suggest that you may receive a different price or rate for goods or services or a different level or quality of goods or services
+
+**Right to Limit Use and Disclosure of Sensitive Personal Information:** You have the right to limit our use and disclosure of your sensitive personal information to that use which is necessary to perform the services or provide the goods reasonably expected by an average consumer who requests those goods or services.
+
+**Verification Process:** Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. These verification efforts require us to ask you to provide information so that we can match it with information you have previously provided us. For instance, depending on the type of request you submit, we may ask you to provide certain information so that we can match the information you provide with the information we already have on file, or we may contact you through a communication method (e.g., phone or email) that you have previously provided to us.
+
+**Response Time:** We will respond to your request within 45 days of receipt. If we need more time (up to 90 days), we will inform you of the reason and extension period in writing.
+
+**Authorized Agent:** You can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.
 
 We will consider and act upon any request in accordance with applicable data protection laws.
 
@@ -245,9 +274,19 @@ Most web browsers and some mobile operating systems and mobile applications incl
 
 **In Short: Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.**
 
-California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+California law allows users of the Services who are California residents to request and receive once a year, free of charge, a notice from us describing what categories of personal information (if any) we shared with third parties, including our corporate affiliates, for their direct marketing purposes during the preceding calendar year. If you are a California resident and would like to request a copy of this notice, please contact us as provided in the "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" section. In your request, please specify that you want a "California Privacy Rights Notice." Please allow at least thirty (30) days for a response.
 
-If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g., backups, etc.).
+In addition, if you are a California resident under the age of 18 and are a registered user of the Services, you may request that we remove content or information that you posted on Services or stored on our servers by: (i) submitting a request as provided in the "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" section and (ii) clearly identifying the content or information you wish to have removed and providing sufficient information to allow us to locate the content or information to be removed.
+
+However, please note that we are not required to erase or otherwise eliminate content or information if:
+
+- other state or federal laws require us or a third party to maintain the content or information;
+- the content or information was posted, stored, or republished by another user;
+- the content or information is anonymized so that the minor cannot be individually identified;
+- the minor does not follow the instructions posted in this Privacy Policy on how to request removal of such content or information; and
+- the minor has received compensation or other consideration for providing the content.
+
+Further, nothing in this provision shall be construed to limit the authority of a law enforcement agency to obtain such content or information.
 
 ### CCPA Privacy Notice
 
@@ -290,6 +329,10 @@ If you are using an authorized agent to exercise your right to opt out we may de
 We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Each service provider is a for-profit entity that processes the information on our behalf, following the same strict privacy protection obligations mandated by the CCPA.
 
 We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
+
+**Data Enrichment:** We may combine the personal information we collect with information from third-party sources to enhance our understanding of your preferences and provide you with more personalized services. This may include demographic information, interests, and behavioral data. We will only use such enriched data in accordance with this Privacy Policy and applicable law.
+
+**Non-Discrimination:** We will not discriminate against you for exercising any of your CCPA rights. We will not deny you goods or services, charge you different prices, provide you with a different level or quality of services, or suggest that you may receive a different price or level of quality for goods or services.
 
 Ampera SA has not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. Ampera SA will not sell or share personal information in the future belonging to website visitors, users, and other consumers.
 
