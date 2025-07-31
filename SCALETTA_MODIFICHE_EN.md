@@ -127,9 +127,9 @@
 ## 🌍 5. Localization
 
 ### 5.1 Multilingual Versions
-- [ ] Publish Privacy Policy and Terms in EN, IT, CN with separate files
-- [ ] Indicate links in app menu
-- [ ] Ensure legal compliance in all languages
+- [x] Publish Privacy Policy and Terms in EN, IT, CN with separate files
+- [x] Indicate links in app menu
+- [x] Ensure legal compliance in all languages
 
 ### 5.2 Translation Best Practices
 - [ ] Guarantee terminological consistency and legal compliance in all languages
@@ -188,11 +188,12 @@
 - [x] 3.2 Google Play Data Safety
 - [x] 4.1 iOS Info.plist
 - [x] 4.2 Android Runtime Permissions
+- [x] 5.1 Multilingual Versions
 - [x] 8.1 Repository Setup
 - [x] 8.2 Commit Flow
 
 ### Pending Tasks ⏳
-- [ ] 5.1 Multilingual Versions
+- [ ] 5.2 Translation Best Practices
 - [ ] 2.7 Dispute Resolution
 - [ ] 3.1 Apple App Store & Privacy Nutrition Labels
 - [ ] 3.2 Google Play Data Safety
@@ -203,7 +204,7 @@
 - [ ] 6. EULA
 - [ ] 7.1 Naming Convention
 - [ ] 7.2 Folders
-
+\
 ---
 
 ## 🎯 Next Steps
@@ -219,4 +220,4 @@
 ---
 
 *Last updated: April 28, 2025*
-*Status: 13/18 tasks completed (72.2%)* 
+*Status: 14/18 tasks completed (77.8%)* 

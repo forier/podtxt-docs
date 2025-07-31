@@ -148,13 +148,13 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
 
 ## 🌍 5. Localizzazione
 
-### 5.1 Versioni Multilingue
-- [ ] Pubblicare la Privacy Policy e i Terms in:
-  - [ ] EN (inglese) - versione principale
-  - [ ] IT (italiano) - traduzione completa
-  - [ ] CN (cinese) - traduzione completa
-- [ ] Creare file separati per ogni lingua
-- [ ] Indicare i link nel menu dell'app
+### 5.1 Versioni Multilingue ✅ COMPLETATO
+- [x] Pubblicare la Privacy Policy e i Terms in:
+  - [x] EN (inglese) - versione principale
+  - [x] IT (italiano) - traduzione completa
+  - [x] CN (cinese) - traduzione completa
+- [x] Creare file separati per ogni lingua
+- [x] Indicare i link nel menu dell'app
 
 ### 5.2 Best Practices di Traduzione
 - [ ] Garantire coerenza terminologica in tutte le lingue
