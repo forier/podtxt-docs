@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.podtxt.app">
+
+    <!-- 
+    Android Manifest Permissions Documentation
+    This file contains the permission declarations that must be included in the Android app's manifest file
+    to comply with Google Play guidelines and provide clear explanations to users.
+    
+    Each permission includes:
+    - The exact permission name required by Android
+    - A clear explanation of why the permission is needed
+    - User-friendly rationale messages for runtime requests
+    - Implementation guidance for developers
+    -->
+
+    <!-- ========================================
+         INTERNET AND NETWORK PERMISSIONS
+         ======================================== -->
+    
+    <!-- Internet Access - Required for app functionality -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 
+    Rationale: "This app needs internet access to sync your data, download content, and provide real-time features. 
+    Without internet access, you can only use offline features."
+    Usage: API calls, content sync, real-time updates
+    -->
+
+    <!-- Network State - For connectivity monitoring -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 
+    Rationale: "This app checks your network connection to provide the best experience and save data usage. 
+    It helps determine when to sync data and show offline content."
+    Usage: Connectivity monitoring, data usage optimization
+    -->
+
+    <!-- ========================================
+         CAMERA AND MEDIA PERMISSIONS
+         ======================================== -->
+    
+    <!-- Camera Permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 
+    Rationale: "This app needs camera access to let you take photos and videos for creating content, 
+    scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose."
+    Usage: Photo/video capture, document scanning, QR code scanning
+    Implementation: Use CameraX or Camera2 API
+    -->
+
+    <!-- Read External Storage (for older Android versions) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    <!-- 
+    Rationale: "This app needs access to your photos and videos to let you select and upload content from your device. 
+    We only access files you specifically choose to share."
+    Usage: Photo selection, content sharing, profile pictures
+    Implementation: Use MediaStore API for Android 10+, SAF for older versions
+    -->
+
+    <!-- Write External Storage (for saving files) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="28" />
+    <!-- 
+    Rationale: "This app needs permission to save photos and videos to your device. 
+    This allows you to save content you create or download within the app to your gallery."
+    Usage: Saving downloaded content, exporting files
+    Implementation: Use MediaStore API for Android 10+
+    -->
+
+    <!-- ========================================
+         LOCATION PERMISSIONS
+         ======================================== -->
+    
+    <!-- Location Permission (Fine) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 
+    Rationale: "This app needs access to your precise location to provide location-based services, 
+    such as finding nearby content, location-specific features, or improving your experience with relevant local information."
+    Usage: Location-based services, nearby content, local features
+    Implementation: Use FusedLocationProviderClient
+    -->
+
+    <!-- Location Permission (Coarse) -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 
+    Rationale: "This app uses approximate location to provide general location-based features 
+    while using less battery power. You can choose to provide precise location for enhanced features."
+    Usage: General location services, battery optimization
+    Implementation: Fallback for fine location
+    -->
+
+    <!-- ========================================
+         AUDIO PERMISSIONS
+         ======================================== -->
+    
+    <!-- Microphone Permission -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 
+    Rationale: "This app needs access to your microphone to enable voice recording, audio messages, 
+    voice commands, and other audio-related features. Audio recordings will only be captured when you actively use audio features."
+    Usage: Voice recording, audio messages, voice commands
+    Implementation: Use MediaRecorder or AudioRecord
+    -->
+
+    <!-- ========================================
+         CONTACTS AND COMMUNICATION
+         ======================================== -->
+    
+    <!-- Contacts Permission -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 
+    Rationale: "This app may access your contacts to help you connect with friends, share content, 
+    or find people you know. We only access contacts you choose to share and use this information to enhance your social experience."
+    Usage: Social features, friend suggestions, content sharing
+    Implementation: Use ContactsContract API
+    -->
+
+    <!-- ========================================
+         NOTIFICATION PERMISSIONS
+         ======================================== -->
+    
+    <!-- Post Notifications (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- 
+    Rationale: "This app needs permission to send you notifications about important updates, 
+    new content, and activity from your friends. You can customize notification settings in the app."
+    Usage: Push notifications, updates, social activity
+    Implementation: Use NotificationManager for Android 13+
+    -->
+
+    <!-- ========================================
+         SYSTEM PERMISSIONS
+         ======================================== -->
+    
+    <!-- Wake Lock (for background processing) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 
+    Rationale: "This app needs to keep your device awake during certain operations like uploading large files 
+    or syncing data to ensure the process completes successfully."
+    Usage: Background sync, file uploads, data processing
+    Implementation: Use WorkManager for background tasks
+    -->
+
+    <!-- Vibration (for notifications) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 
+    Rationale: "This app uses vibration to alert you to important notifications and events. 
+    You can disable vibration in the app settings."
+    Usage: Notification alerts, haptic feedback
+    Implementation: Use Vibrator API
+    -->
+
+    <!-- ========================================
+         BIOMETRIC PERMISSIONS
+         ======================================== -->
+    
+    <!-- Biometric Authentication -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <!-- 
+    Rationale: "This app uses biometric authentication (fingerprint, face, or iris) to securely log you in 
+    and protect your personal information. This provides quick and secure access to your account."
+    Usage: Secure authentication, account protection
+    Implementation: Use BiometricPrompt API
+    -->
+
+    <!-- ========================================
+         FEATURE DECLARATIONS
+         ======================================== -->
+    
+    <!-- Camera Feature -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <!-- 
+    Note: Camera is not required for app installation, but needed for camera features
+    -->
+
+    <!-- Location Feature -->
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <!-- 
+    Note: Location is not required for app installation, but needed for location features
+    -->
+
+    <!-- Microphone Feature -->
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <!-- 
+    Note: Microphone is not required for app installation, but needed for audio features
+    -->
+
+    <!-- ========================================
+         APPLICATION CONFIGURATION
+         ======================================== -->
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PodTxt"
+        android:requestLegacyExternalStorage="false"
+        tools:targetApi="31">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.PodTxt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- File Provider for sharing files -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+    <!-- ========================================
+         IMPLEMENTATION NOTES
+         ======================================== -->
+    
+    <!-- 
+    Best Practices for Permission Implementation:
+    
+    1. Request permissions only when needed (just-in-time)
+    2. Provide clear explanations before requesting permissions
+    3. Allow users to decline permissions gracefully
+    4. Provide alternative functionality when permissions are denied
+    5. Test permission flows thoroughly before Play Store submission
+    6. Use the latest Android APIs (CameraX, WorkManager, etc.)
+    7. Handle permission changes while app is in background
+    8. Provide in-app settings to manage permissions
+    9. Follow Material Design guidelines for permission dialogs
+    10. Implement proper error handling for permission failures
+    
+    Runtime Permission Request Flow:
+    1. Check if permission is already granted
+    2. Show rationale if permission was previously denied
+    3. Request permission using requestPermissions()
+    4. Handle the result in onRequestPermissionsResult()
+    5. Provide alternative functionality if permission is denied
+    6. Guide user to app settings if permission is permanently denied
+    
+    Testing Checklist:
+    - [ ] Test permission request flow
+    - [ ] Test permission denied scenario
+    - [ ] Test permission granted scenario
+    - [ ] Test app settings integration
+    - [ ] Test permission change while app is in background
+    - [ ] Test alternative functionality when permission is denied
+    - [ ] Test on different Android versions
+    - [ ] Test on different device manufacturers
+    -->
+
+</manifest> 

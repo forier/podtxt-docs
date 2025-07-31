@@ -135,14 +135,14 @@ Questa scaletta definisce gli interventi necessari per aggiornare e allineare la
   - [x] `NSMicrophoneUsageDescription` - "Accesso al microfono per registrazioni audio"
   - [x] `NSPhotoLibraryUsageDescription` - "Accesso alla galleria per selezionare immagini"
 
-### 4.2 Android Runtime Permissions
-- [ ] Fornire messaggi di permission rationale che giustifichino l'uso di:
-  - [ ] Fotocamera
-  - [ ] Posizione
-  - [ ] Microfono
-  - [ ] Archiviazione
-- [ ] Documentare nel manifesto le autorizzazioni
-- [ ] Spiegare in-app perché vengono richieste
+### 4.2 Android Runtime Permissions ✅ COMPLETATO
+- [x] Fornire messaggi di permission rationale che giustifichino l'uso di:
+  - [x] Fotocamera
+  - [x] Posizione
+  - [x] Microfono
+  - [x] Archiviazione
+- [x] Documentare nel manifesto le autorizzazioni
+- [x] Spiegare in-app perché vengono richieste
 
 ---
 
