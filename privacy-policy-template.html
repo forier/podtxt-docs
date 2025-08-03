@@ -18,10 +18,10 @@
             background: #fff;
         }
         
-        /* Header - Simplified design matching PodTxt */
+        /* Header - Dark design matching PodTxt screenshot */
         .header {
-            background: #fff;
-            border-bottom: 1px solid #e5e5e5;
+            background: #1a1a1a;
+            border-bottom: none;
             padding: 1rem 0;
             position: sticky;
             top: 0;
@@ -42,12 +42,35 @@
             align-items: center;
             font-size: 1.8rem;
             font-weight: bold;
-            color: #333;
+            color: white;
             text-decoration: none;
         }
         
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #e91e63, #f06292);
+            border-radius: 50%;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .logo-icon::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 10px solid white;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            margin-left: 3px;
+        }
+        
         .logo-text {
-            color: #333;
+            color: white;
+            font-weight: 700;
         }
         
         .nav-menu {
@@ -58,14 +81,14 @@
         }
         
         .nav-menu a {
-            color: #666;
+            color: #ccc;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
         
         .nav-menu a:hover {
-            color: #333;
+            color: white;
         }
         
         .language-selector {
@@ -78,30 +101,67 @@
             color: #999;
             text-decoration: none;
             font-size: 0.9rem;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
             transition: all 0.3s ease;
+            font-weight: 600;
         }
         
-        .language-selector a.active,
+        .language-selector a.active {
+            color: #e91e63;
+            background: rgba(233, 30, 99, 0.1);
+        }
+        
         .language-selector a:hover {
-            color: #333;
-            background: rgba(0, 0, 0, 0.05);
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
         }
         
         .get-app-btn {
-            background: #000;
-            color: white !important;
-            padding: 0.7rem 1.5rem;
-            border-radius: 6px;
+            background: white;
+            color: #333 !important;
+            padding: 0.7rem 1.2rem;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
             margin-left: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .get-app-btn:hover {
-            background: #333;
+            background: #f0f0f0;
+            transform: translateY(-1px);
+        }
+        
+        .get-app-btn::after {
+            content: '→';
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        /* Hero Section - Dark background */
+        .hero-section {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem 2rem 2rem;
+        }
+        
+        .page-title h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+        
+        .last-updated {
+            font-size: 1.1rem;
+            color: #999;
+            font-weight: 400;
         }
         
         /* Main Content Area */
@@ -109,27 +169,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 3rem 2rem;
-        }
-        
-        /* Page Title */
-        .page-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .page-title h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-        
-        .last-updated {
-            font-size: 1rem;
-            color: #666;
-            font-weight: 400;
+            background: white;
         }
         
         /* Content Styling */
@@ -290,8 +330,20 @@
                 justify-content: center;
             }
             
+            .language-selector {
+                margin-left: 0;
+            }
+            
+            .get-app-btn {
+                margin-left: 0;
+            }
+            
+            .hero-section {
+                padding: 3rem 1rem 2rem 1rem;
+            }
+            
             .page-title h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             
             .main-container {
@@ -310,6 +362,7 @@
     <header class="header">
         <nav class="nav-container">
             <a href="/" class="logo">
+                <div class="logo-icon"></div>
                 <span class="logo-text">podtxt</span>
             </a>
             <ul class="nav-menu">
@@ -326,14 +379,16 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-container">
-        <!-- Page Title -->
+    <!-- Hero Section -->
+    <section class="hero-section">
         <div class="page-title">
             <h1>Privacy Policy</h1>
             <p class="last-updated">Last updated January 15, 2025</p>
         </div>
+    </section>
 
+    <!-- Main Content -->
+    <main class="main-container">
         <!-- Content -->
         <div class="content">
             
