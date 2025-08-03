@@ -15,13 +15,14 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #fff;
         }
         
-        /* Header */
+        /* Header - Simplified design matching PodTxt */
         .header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: white;
-            padding: 0;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -33,38 +34,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
-            color: white;
+            color: #333;
             text-decoration: none;
         }
         
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #ff4757, #ff3838);
-            border-radius: 50%;
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        
-        .logo-icon::before {
-            content: '';
-            width: 0;
-            height: 0;
-            border-left: 8px solid white;
-            border-top: 6px solid transparent;
-            border-bottom: 6px solid transparent;
-            margin-left: 2px;
+        .logo-text {
+            color: #333;
         }
         
         .nav-menu {
@@ -75,14 +58,14 @@
         }
         
         .nav-menu a {
-            color: white;
+            color: #666;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
         
         .nav-menu a:hover {
-            color: #ff4757;
+            color: #333;
         }
         
         .language-selector {
@@ -92,7 +75,7 @@
         }
         
         .language-selector a {
-            color: #ccc;
+            color: #999;
             text-decoration: none;
             font-size: 0.9rem;
             padding: 0.2rem 0.4rem;
@@ -102,75 +85,72 @@
         
         .language-selector a.active,
         .language-selector a:hover {
-            color: white;
-            background: rgba(255, 71, 87, 0.2);
+            color: #333;
+            background: rgba(0, 0, 0, 0.05);
         }
         
         .get-app-btn {
-            background: linear-gradient(135deg, #ff4757, #ff3838);
+            background: #000;
             color: white !important;
             padding: 0.7rem 1.5rem;
-            border-radius: 25px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: background 0.3s ease;
             margin-left: 1rem;
         }
         
         .get-app-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.3);
+            background: #333;
         }
         
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff, #ff4757);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .hero .last-updated {
-            font-size: 1.1rem;
-            color: #ccc;
-            font-weight: 400;
-        }
-        
-        /* Content */
-        .content {
+        /* Main Content Area */
+        .main-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 3rem 2rem;
-            background: white;
         }
         
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-title h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        
+        .last-updated {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        /* Content Styling */
         .content h2 {
-            color: #1a1a1a;
-            font-size: 1.8rem;
+            color: #333;
+            font-size: 1.5rem;
             margin: 2.5rem 0 1rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #ff4757;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .content h3 {
-            color: #2d2d2d;
-            font-size: 1.3rem;
+            color: #333;
+            font-size: 1.2rem;
             margin: 2rem 0 1rem 0;
             font-weight: 600;
         }
         
         .content h4 {
-            color: #2d2d2d;
+            color: #333;
             font-size: 1.1rem;
             margin: 1.5rem 0 0.8rem 0;
             font-weight: 600;
@@ -192,59 +172,108 @@
         }
         
         .content strong {
-            color: #1a1a1a;
+            color: #333;
             font-weight: 600;
         }
         
+        /* Special sections */
         .intro-text {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #666;
             margin-bottom: 2rem;
             padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #ff4757;
+            background: #f9f9f9;
+            border-radius: 6px;
+            border-left: 4px solid #333;
         }
         
         .contact-info {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            background: #f9f9f9;
             padding: 2rem;
-            border-radius: 12px;
+            border-radius: 6px;
             margin: 2rem 0;
-            border: 1px solid #dee2e6;
+            border: 1px solid #e5e5e5;
         }
         
         .contact-info h3 {
-            color: #ff4757;
+            color: #333;
             margin-bottom: 1rem;
         }
         
         /* Cookie Control Box */
         .cookie-control-box {
-            background: #f8f9fa;
+            background: #f9f9f9;
             padding: 1.5rem;
-            border-radius: 8px;
+            border-radius: 6px;
             margin: 1rem 0;
-            border-left: 4px solid #007bff;
+            border-left: 4px solid #666;
         }
         
         .cookie-control-box h4 {
-            color: #007bff;
+            color: #333;
             margin-bottom: 0.5rem;
         }
         
         /* App Store Sections */
         .app-store-section {
-            background: linear-gradient(135deg, #fff5f5, #ffe8e8);
+            background: #f9f9f9;
             padding: 2rem;
-            border-radius: 12px;
+            border-radius: 6px;
             margin: 2rem 0;
-            border: 1px solid #ffccd5;
+            border: 1px solid #e5e5e5;
         }
         
         .app-store-section h2,
         .app-store-section h3 {
-            color: #d63384;
+            color: #333;
+        }
+        
+        /* Links */
+        .content a {
+            color: #333;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        
+        .content a:hover {
+            color: #666;
+        }
+        
+        /* Footer - Matching PodTxt style */
+        .footer {
+            background: #f9f9f9;
+            border-top: 1px solid #e5e5e5;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer-links a:hover {
+            color: #333;
+        }
+        
+        .footer-copyright {
+            color: #999;
+            font-size: 0.9rem;
         }
         
         /* Responsive */
@@ -261,61 +290,18 @@
                 justify-content: center;
             }
             
-            .hero h1 {
-                font-size: 2.5rem;
+            .page-title h1 {
+                font-size: 2rem;
             }
             
-            .content {
+            .main-container {
                 padding: 2rem 1rem;
             }
             
-            .nav-menu {
-                display: none;
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
             }
-        }
-        
-        /* Link Styles */
-        .content a {
-            color: #ff4757;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .content a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Table of Contents */
-        .toc {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border-left: 4px solid #ff4757;
-        }
-        
-        .toc h3 {
-            color: #ff4757;
-            margin-bottom: 1rem;
-        }
-        
-        .toc ul {
-            list-style: none;
-            margin-left: 0;
-        }
-        
-        .toc ul li {
-            margin-bottom: 0.3rem;
-        }
-        
-        .toc ul li a {
-            color: #555;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .toc ul li a:hover {
-            color: #ff4757;
         }
     </style>
 </head>
@@ -324,8 +310,7 @@
     <header class="header">
         <nav class="nav-container">
             <a href="/" class="logo">
-                <div class="logo-icon"></div>
-                podtxt
+                <span class="logo-text">podtxt</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="/about">About</a></li>
@@ -341,712 +326,353 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated January 15, 2025</p>
-    </section>
-
-    <!-- Content -->
-    <main class="content">
-        
-        <h2 id="1-introduction">1. Introduction</h2>
-        <p>Welcome to PodTxt's Privacy Policy. This policy describes how we collect, use, and protect your personal information when you use our website https://www.podtxt.com (the "Site") and our services.</p>
-
-        <h3 id="1-1-acceptance">1.1 Acceptance of Policy</h3>
-        <p>By accessing or using our Site, you accept this Privacy Policy. If you do not agree with any part of this policy, you must not use our Site.</p>
-
-        <h3 id="1-2-changes">1.2 Changes to Policy</h3>
-        <p>We reserve the right to modify this Privacy Policy at any time. Changes will be published on this page with an updated "Last updated" date. We recommend that you review this policy regularly.</p>
-
-        <h3 id="1-3-changelog">1.3 Recent Changes</h3>
-        <div class="intro-text">
-            <p><strong>January 15, 2025:</strong> Updated mobile security practices, enhanced third-party services section, added comprehensive Apple App Store and Google Play Store compliance sections.</p>
-            <p><strong>April 28, 2024:</strong> Initial version with GDPR compliance and basic privacy rights.</p>
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Page Title -->
+        <div class="page-title">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated January 15, 2025</p>
         </div>
 
-        <h2 id="2-information-collect">2. Information We Collect</h2>
-
-        <h3 id="2-1-direct-information">2.1 Information You Provide Directly</h3>
-        <p>We collect information that you provide directly to us, such as:</p>
-        <ul>
-            <li><strong>Contact Information:</strong> Name, email address, phone number</li>
-            <li><strong>Account Information:</strong> Username, password, preferences</li>
-            <li><strong>Content:</strong> Posts, comments, messages, files you upload</li>
-            <li><strong>Payment Information:</strong> Billing and payment data (processed by secure third parties)</li>
-            <li><strong>Communications:</strong> Messages you send us via email, chat, or other channels</li>
-        </ul>
-
-        <p><strong>Legal Basis:</strong> Processing is based on your consent (Article 6(1)(a) GDPR) and performance of contract (Article 6(1)(b) GDPR).</p>
-
-        <h3 id="2-2-automatic-information">2.2 Information Collected Automatically</h3>
-        <p>We automatically collect some information when you use our Site:</p>
-        <ul>
-            <li><strong>Device Information:</strong> Device type, operating system, browser, IP address</li>
-            <li><strong>Usage Information:</strong> Pages visited, time spent, actions taken</li>
-            <li><strong>Location Information:</strong> Approximate location (if permitted)</li>
-            <li><strong>Cookies and Similar Technologies:</strong> As described in Section 5</li>
-        </ul>
-
-        <p><strong>Legal Basis:</strong> Processing is based on legitimate interest (Article 6(1)(f) GDPR) for analytics and service improvement.</p>
-
-        <h3 id="2-3-third-party-information">2.3 Third-Party Information</h3>
-        <p>We may receive information about you from third parties, such as:</p>
-        <ul>
-            <li>Social media platforms (if you connect through these services)</li>
-            <li>Business partners</li>
-            <li>Analytics and advertising services</li>
-        </ul>
-
-        <p><strong>Legal Basis:</strong> Processing is based on legitimate interest (Article 6(1)(f) GDPR) and your consent where required.</p>
-
-        <h2 id="3-how-we-use">3. How We Use Information</h2>
-        <p>We use the information we collect to:</p>
-
-        <h3 id="3-1-provide-services">3.1 Provide Our Services</h3>
-        <ul>
-            <li>Create and manage your account</li>
-            <li>Provide website functionality</li>
-            <li>Process payments and subscriptions</li>
-            <li>Send service-related communications</li>
-        </ul>
-
-        <h3 id="3-2-improve-services">3.2 Improve Our Services</h3>
-        <ul>
-            <li>Analyze website usage</li>
-            <li>Develop new features</li>
-            <li>Optimize performance</li>
-            <li>Conduct research and analysis</li>
-        </ul>
-
-        <h3 id="3-3-communicate">3.3 Communicate with You</h3>
-        <ul>
-            <li>Send important updates</li>
-            <li>Provide customer support</li>
-            <li>Send marketing communications (with your consent)</li>
-            <li>Respond to your requests</li>
-        </ul>
-
-        <h3 id="3-4-security-compliance">3.4 Security and Compliance</h3>
-        <ul>
-            <li>Protect against fraud and abuse</li>
-            <li>Comply with legal obligations</li>
-            <li>Enforce our terms of service</li>
-        </ul>
-
-        <h2 id="4-third-party-services">4. Third-Party Services and SDKs</h2>
-
-        <h3 id="4-1-service-providers">4.1 Service Providers and Third-Party Processors</h3>
-        <p>We share your data with service providers and third-party processors who help us provide our services:</p>
-
-        <p><strong>Payment Processors:</strong></p>
-        <ul>
-            <li>Stripe, PayPal for online payments</li>
-            <li>Apple Pay, Google Pay for mobile payments</li>
-            <li>These services process payment information securely</li>
-        </ul>
-
-        <p><strong>Analytics Services:</strong></p>
-        <ul>
-            <li>Google Analytics, Firebase Analytics for usage analytics</li>
-            <li>These services help us understand user behavior and improve our services</li>
-        </ul>
-
-        <p><strong>Firebase Services:</strong></p>
-        <ul>
-            <li>Firebase (Google Analytics, Firebase, Messaging) for app analytics, messaging, and cloud services</li>
-            <li>These services handle app data and provide mobile-specific functionality</li>
-        </ul>
-
-        <p><strong>Cloud Storage and Infrastructure:</strong></p>
-        <ul>
-            <li>AWS (Amazon Web Services), Google Cloud Platform for hosting and storage</li>
-            <li>These services store and process app data securely</li>
-        </ul>
-
-        <p><strong>Customer Support Tools:</strong></p>
-        <ul>
-            <li>Zendesk, Intercom for customer support and chat functionality</li>
-            <li>These services help us provide better customer service</li>
-        </ul>
-
-        <p><strong>Marketing Platforms:</strong></p>
-        <ul>
-            <li>Mailchimp, SendGrid for email marketing and communications</li>
-            <li>These services help us send newsletters and updates (with your consent)</li>
-        </ul>
-
-        <p><strong>Subscription Management:</strong></p>
-        <ul>
-            <li>RevenueCat or in_app_purchase for subscription management and processing</li>
-            <li>Apple StoreKit and Google Play Billing for native payment systems</li>
-            <li>These services handle subscription data and payment processing</li>
-        </ul>
-
-        <p><strong>App Store Platforms:</strong></p>
-        <ul>
-            <li>Apple App Store Connect for iOS distribution</li>
-            <li>Google Play Console for Android distribution</li>
-        </ul>
-
-        <p><strong>Type of data accessed:</strong></p>
-        <ul>
-            <li>Device ID, error logs, anonymous usage data, transaction information</li>
-        </ul>
-
-        <p><strong>Security Measures:</strong></p>
-        <ul>
-            <li>All third parties implement appropriate technical and organizational measures</li>
-            <li>Data is encrypted in transit and at rest</li>
-            <li>Access is limited to authorized personnel only</li>
-            <li>Regular security audits and monitoring are performed</li>
-        </ul>
-
-        <p>All third parties are bound by a Data Processing Agreement (DPA) that ensures the protection of your data.
-        Some services perform cross-border data transfers (example: Firebase to the US) with appropriate safeguards.</p>
-
-        <h3 id="4-2-business-transfers">4.2 Business Transfers</h3>
-        <p>In the event of a merger, acquisition, asset sale, or bankruptcy, your data may be transferred to third parties. We will notify you of such changes and your information will remain protected under this Privacy Policy.</p>
-
-        <h3 id="4-3-legal-requirements">4.3 Legal Requirements and Protection</h3>
-        <p>We may share your data when:</p>
-        <ul>
-            <li>Required by law or government authorities</li>
-            <li>Necessary to protect our rights, property, or safety</li>
-            <li>Necessary to prevent fraud or abuse</li>
-            <li>Required to respond to legal proceedings</li>
-        </ul>
-
-        <h3 id="4-4-affiliates">4.4 Affiliates</h3>
-        <p>We may share information with our affiliates, subsidiaries, and parent companies, always in compliance with this Privacy Policy.</p>
-
-        <h3 id="4-5-business-partners">4.5 Third-Party Business Partners</h3>
-        <p>We may share aggregated and anonymized data with business partners for research and development purposes, always in a way that cannot personally identify you.</p>
-
-        <h3 id="4-6-data-processing">4.6 Data Processing Agreements</h3>
-        <p>For users in the EEA, UK, and Switzerland, we have data processing agreements (DPA) with all service providers that ensure GDPR compliance.</p>
-
-        <h2 id="5-cookie-policy">5. Cookie Policy and Tracking Technologies</h2>
-
-        <h3 id="5-1-what-cookies">5.1 What are Cookies</h3>
-        <p>Cookies are small text files that are stored on your device when you visit our website. They help us improve your experience and provide personalized functionality.</p>
-
-        <h3 id="5-2-types-cookies">5.2 Types of Cookies We Use</h3>
-
-        <p><strong>Essential Cookies (Necessary):</strong></p>
-        <ul>
-            <li>Keep your session active</li>
-            <li>Manage authentication</li>
-            <li>Ensure website security</li>
-            <li>Cannot be disabled</li>
-        </ul>
-
-        <p><strong>Analytics Cookies (Analytical):</strong></p>
-        <ul>
-            <li>Google Analytics, Firebase Analytics</li>
-            <li>Measure website usage</li>
-            <li>Help improve performance</li>
-            <li>Can be disabled through browser settings</li>
-        </ul>
-
-        <p><strong>Marketing Cookies (Marketing):</strong></p>
-        <ul>
-            <li>Facebook Pixel, Google Ads</li>
-            <li>Show personalized advertisements</li>
-            <li>Track conversions</li>
-            <li>Require your explicit consent</li>
-        </ul>
-
-        <p><strong>Functional Cookies (Functional):</strong></p>
-        <ul>
-            <li>Store your preferences</li>
-            <li>Personalize the interface</li>
-            <li>Improve functionality</li>
-            <li>Can be disabled</li>
-        </ul>
-
-        <h3 id="5-3-control-cookies">5.3 How to Control Cookies</h3>
-
-        <div class="cookie-control-box">
-            <h4>Browser Settings:</h4>
+        <!-- Content -->
+        <div class="content">
+            
+            <p>This privacy notice for Ampera SA ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), describes how and why we might collect, store, use, and/or share ("<strong>process</strong>") your information when you use our services ("<strong>Services</strong>"), such as when you:</p>
+            
             <ul>
-                <li>Chrome: Settings > Privacy and security > Cookies</li>
-                <li>Firefox: Options > Privacy and security > Cookies</li>
-                <li>Safari: Preferences > Privacy > Manage cookies</li>
-                <li>Edge: Settings > Cookies and site permissions</li>
+                <li>Visit our website at <a href="https://www.podtxt.com">https://www.podtxt.com</a>, or any website of ours that links to this privacy notice</li>
+                <li>Download and use our mobile application (PodTxt), or any other application of ours that links to this privacy notice</li>
+                <li>Engage with us in other related ways, including any sales, marketing, or events</li>
             </ul>
+
+            <p><strong>Questions or concerns?</strong> Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at support@podtxt.com.</p>
+
+            <h3 id="1-3-changelog">Recent Changes</h3>
+            <div class="intro-text">
+                <p><strong>January 15, 2025:</strong> Updated mobile security practices, enhanced third-party services section, added comprehensive Apple App Store and Google Play Store compliance sections.</p>
+                <p><strong>May 04, 2023:</strong> Initial version with basic privacy policy structure.</p>
+            </div>
+
+            <h2 id="1-introduction">1. What Information Do We Collect?</h2>
+
+            <h3 id="1-1-direct-information">Personal information you disclose to us</h3>
+            <p><strong><em>In Short:</em></strong> We collect personal information that you provide to us.</p>
+            
+            <p>We collect personal information that you provide to us, such as:</p>
+            <ul>
+                <li><strong>Contact Information:</strong> Name, email address, phone number</li>
+                <li><strong>Account Information:</strong> Username, password, preferences</li>
+                <li><strong>Content:</strong> Posts, comments, messages, files you upload</li>
+                <li><strong>Payment Information:</strong> Billing and payment data (processed by secure third parties)</li>
+                <li><strong>Communications:</strong> Messages you send us via email, chat, or other channels</li>
+            </ul>
+
+            <p><strong>Legal Basis:</strong> Processing is based on your consent (Article 6(1)(a) GDPR) and performance of contract (Article 6(1)(b) GDPR).</p>
+
+            <h3 id="1-2-automatic-information">Information automatically collected</h3>
+            <p><strong><em>In Short:</em></strong> Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.</p>
+            
+            <p>We automatically collect some information when you use our Site:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system, browser, IP address</li>
+                <li><strong>Usage Information:</strong> Pages visited, time spent, actions taken</li>
+                <li><strong>Location Information:</strong> Approximate location (if permitted)</li>
+                <li><strong>Cookies and Similar Technologies:</strong> As described in Section 5</li>
+            </ul>
+
+            <p><strong>Legal Basis:</strong> Processing is based on legitimate interest (Article 6(1)(f) GDPR) for analytics and service improvement.</p>
+
+            <h2 id="2-how-we-use">2. How Do We Process Your Information?</h2>
+            <p><strong><em>In Short:</em></strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law.</p>
+
+            <h3 id="2-1-provide-services">To provide our Services</h3>
+            <ul>
+                <li>Create and manage your account</li>
+                <li>Provide website functionality</li>
+                <li>Process payments and subscriptions</li>
+                <li>Send service-related communications</li>
+            </ul>
+
+            <h3 id="2-2-improve-services">To improve our Services</h3>
+            <ul>
+                <li>Analyze website usage</li>
+                <li>Develop new features</li>
+                <li>Optimize performance</li>
+                <li>Conduct research and analysis</li>
+            </ul>
+
+            <h2 id="3-legal-bases">3. What Legal Bases Do We Rely On?</h2>
+            <p><strong><em>In Short:</em></strong> We only process your personal information when we believe it is necessary and we have a valid legal reason to do so under applicable law.</p>
+
+            <p>The General Data Protection Regulation (GDPR) requires us to explain the valid legal bases we rely on in order to process your personal information. We may rely on the following legal bases:</p>
+            <ul>
+                <li><strong>Consent:</strong> We may process your information if you have given us permission to use your personal information for a specific purpose.</li>
+                <li><strong>Performance of a Contract:</strong> We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you.</li>
+                <li><strong>Legitimate Interests:</strong> We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests.</li>
+            </ul>
+
+            <h2 id="4-third-party-services">4. When And With Whom Do We Share Your Personal Information?</h2>
+
+            <h3 id="4-1-service-providers">Service Providers and Third-Party Processors</h3>
+            <p>We share your data with service providers and third-party processors who help us provide our services:</p>
+
+            <p><strong>Payment Processors:</strong></p>
+            <ul>
+                <li>Stripe, PayPal for online payments</li>
+                <li>Apple Pay, Google Pay for mobile payments</li>
+                <li>These services process payment information securely</li>
+            </ul>
+
+            <p><strong>Analytics Services:</strong></p>
+            <ul>
+                <li>Google Analytics, Firebase Analytics for usage analytics</li>
+                <li>These services help us understand user behavior and improve our services</li>
+            </ul>
+
+            <p><strong>Firebase Services:</strong></p>
+            <ul>
+                <li>Firebase (Google Analytics, Firebase, Messaging) for app analytics, messaging, and cloud services</li>
+                <li>These services handle app data and provide mobile-specific functionality</li>
+            </ul>
+
+            <p><strong>Cloud Storage and Infrastructure:</strong></p>
+            <ul>
+                <li>AWS (Amazon Web Services), Google Cloud Platform for hosting and storage</li>
+                <li>These services store and process app data securely</li>
+            </ul>
+
+            <p><strong>Customer Support Tools:</strong></p>
+            <ul>
+                <li>Zendesk, Intercom for customer support and chat functionality</li>
+                <li>These services help us provide better customer service</li>
+            </ul>
+
+            <p><strong>Marketing Platforms:</strong></p>
+            <ul>
+                <li>Mailchimp, SendGrid for email marketing and communications</li>
+                <li>These services help us send newsletters and updates (with your consent)</li>
+            </ul>
+
+            <p><strong>Subscription Management:</strong></p>
+            <ul>
+                <li>RevenueCat or in_app_purchase for subscription management and processing</li>
+                <li>Apple StoreKit and Google Play Billing for native payment systems</li>
+                <li>These services handle subscription data and payment processing</li>
+            </ul>
+
+            <p>All third parties are bound by a Data Processing Agreement (DPA) that ensures the protection of your data.</p>
+
+            <h2 id="5-cookie-policy">5. Do We Use Cookies And Other Tracking Technologies?</h2>
+            <p><strong><em>In Short:</em></strong> We may use cookies and other tracking technologies to collect and store your information.</p>
+
+            <h3 id="5-1-types-cookies">Types of Cookies We Use</h3>
+
+            <p><strong>Essential Cookies (Necessary):</strong></p>
+            <ul>
+                <li>Keep your session active</li>
+                <li>Manage authentication</li>
+                <li>Ensure website security</li>
+                <li>Cannot be disabled</li>
+            </ul>
+
+            <p><strong>Analytics Cookies:</strong></p>
+            <ul>
+                <li>Google Analytics, Firebase Analytics</li>
+                <li>Measure website usage</li>
+                <li>Help improve performance</li>
+            </ul>
+
+            <h3 id="5-2-control-cookies">How to Control Cookies</h3>
+
+            <div class="cookie-control-box">
+                <h4>Browser Settings:</h4>
+                <ul>
+                    <li>Chrome: Settings > Privacy and security > Cookies</li>
+                    <li>Firefox: Options > Privacy and security > Cookies</li>
+                    <li>Safari: Preferences > Privacy > Manage cookies</li>
+                </ul>
+            </div>
+
+            <h2 id="6-data-retention">6. How Long Do We Keep Your Information?</h2>
+            <p><strong><em>In Short:</em></strong> We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice.</p>
+
+            <p>We retain your data only for as long as necessary:</p>
+            <ul>
+                <li><strong>Account Data:</strong> Until account deletion</li>
+                <li><strong>Usage Data:</strong> 2 years for analysis and improvements</li>
+                <li><strong>Payment Data:</strong> 7 years for tax obligations</li>
+                <li><strong>Support Data:</strong> 3 years for customer assistance</li>
+            </ul>
+
+            <h2 id="7-security-practices">7. How Do We Keep Your Information Safe?</h2>
+            <p><strong><em>In Short:</em></strong> We aim to protect your personal information through a system of organizational and technical security measures.</p>
+
+            <h3 id="7-1-mobile-security">Security Practices for Mobile</h3>
+            <p><strong>Mobile-Specific Storage:</strong></p>
+            <ul>
+                <li>Android: flutter_secure_storage or EncryptedSharedPreferences for sensitive data</li>
+                <li>iOS: iOS Keychain for secure credential storage</li>
+                <li>Data encryption for all locally stored information</li>
+            </ul>
+
+            <p><strong>Communication Security:</strong></p>
+            <ul>
+                <li>HTTPS/TLS for all data in transit</li>
+                <li>Certificate pinning for additional security</li>
+                <li>End-to-end encryption for sensitive communications</li>
+            </ul>
+
+            <h2 id="8-minors">8. Do We Collect Information From Minors?</h2>
+            <p><strong><em>In Short:</em></strong> We do not knowingly collect data from or market to children under 18 years of age.</p>
+            
+            <p>Our Services are not intended for children under 18 years of age. We do not knowingly collect personal information from children under 18.</p>
+
+            <h2 id="9-privacy-rights">9. What Are Your Privacy Rights?</h2>
+            <p><strong><em>In Short:</em></strong> Depending on your location, you may have certain rights regarding your personal information.</p>
+
+            <h3 id="9-1-gdpr-rights">GDPR Rights (EU/UK residents)</h3>
+            <ul>
+                <li><strong>Right of access:</strong> Request copies of your personal data</li>
+                <li><strong>Right of rectification:</strong> Request correction of inaccurate data</li>
+                <li><strong>Right of erasure:</strong> Request deletion of your personal data</li>
+                <li><strong>Right to data portability:</strong> Request transfer of your data</li>
+                <li><strong>Right to restriction:</strong> Request limitation of processing</li>
+                <li><strong>Right to object:</strong> Object to processing of your data</li>
+            </ul>
+
+            <h3 id="9-2-response-times">Response Times and Contact Methods</h3>
+            <p>We respond to your requests within:</p>
+            <ul>
+                <li><strong>30 days</strong> for standard requests</li>
+                <li><strong>90 days</strong> for complex requests</li>
+            </ul>
+
+            <p><strong>Contact methods:</strong></p>
+            <ul>
+                <li>Email: support@podtxt.com</li>
+                <li>Mail: Ampera SA, Lugano, Switzerland</li>
+            </ul>
+
+            <h2 id="10-do-not-track">10. Controls For Do-Not-Track Features</h2>
+            <p><strong><em>In Short:</em></strong> Most web browsers and some mobile operating systems include a Do-Not-Track feature that can signal your privacy preference.</p>
+
+            <h2 id="11-california-rights">11. Do California Residents Have Specific Privacy Rights?</h2>
+            <p><strong><em>In Short:</em></strong> Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</p>
+
+            <h3 id="11-1-ccpa-rights">California Consumer Privacy Rights (CCPA)</h3>
+            
+            <h4>Right to Know</h4>
+            <p>You have the right to request information about:</p>
+            <ul>
+                <li>Categories of personal information we collect</li>
+                <li>Categories of sources from which personal information is collected</li>
+                <li>Business or commercial purpose for collecting personal information</li>
+                <li>Categories of third parties with whom we share personal information</li>
+            </ul>
+
+            <h4>Right to Delete</h4>
+            <p>You have the right to request deletion of personal information we have collected from you.</p>
+
+            <h4>Right to Opt-Out</h4>
+            <p>You have the right to opt-out of the sale of your personal information. We do not sell personal information.</p>
+
+            <h4>Non-Discrimination</h4>
+            <p>We will not discriminate against you for exercising your CCPA rights.</p>
+
+            <div class="app-store-section">
+                <h2 id="12-apple-nutrition">12. Apple App Store Privacy Nutrition Labels</h2>
+
+                <h3 id="12-1-data-tracking">Data Used to Track You</h3>
+                <p><strong>Device Identifiers:</strong></p>
+                <ul>
+                    <li>Advertising identifier (IDFA) for personalized advertising</li>
+                    <li>Vendor identifier (IDFV) for internal analytics</li>
+                </ul>
+
+                <h3 id="12-2-data-linked">Data Linked to You</h3>
+                <p><strong>Personal Information:</strong></p>
+                <ul>
+                    <li>Name, email, phone number</li>
+                    <li>Payment information (processed by third parties)</li>
+                    <li>Content you upload or share</li>
+                </ul>
+
+                <h3 id="12-3-data-not-linked">Data Not Linked to You</h3>
+                <p><strong>Aggregated Analytics:</strong></p>
+                <ul>
+                    <li>Anonymized usage statistics</li>
+                    <li>Performance metrics</li>
+                    <li>Diagnostic data</li>
+                </ul>
+            </div>
+
+            <div class="app-store-section">
+                <h2 id="13-google-play">13. Google Play Data Safety</h2>
+
+                <h3 id="13-1-data-collection">Data Collection and Usage</h3>
+                <p><strong>Data Collected:</strong></p>
+                <ul>
+                    <li>Personal information (name, email)</li>
+                    <li>Usage data and analytics</li>
+                    <li>Device information</li>
+                </ul>
+
+                <p><strong>Collection Purposes:</strong></p>
+                <ul>
+                    <li>Provide and improve services</li>
+                    <li>Personalize experience</li>
+                    <li>Communicate with users</li>
+                    <li>Ensure security</li>
+                </ul>
+
+                <h3 id="13-2-security-measures">Data Security Measures</h3>
+                <p><strong>Technical Protection:</strong></p>
+                <ul>
+                    <li>End-to-end encryption</li>
+                    <li>Strict access controls</li>
+                    <li>24/7 security monitoring</li>
+                </ul>
+            </div>
+
+            <h2 id="14-updates">14. Do We Make Updates To This Notice?</h2>
+            <p><strong><em>In Short:</em></strong> Yes, we will update this notice as necessary to stay compliant with relevant laws.</p>
+            
+            <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated "Last updated" date.</p>
+
+            <div class="contact-info">
+                <h2 id="15-contact">15. How Can You Contact Us About This Notice?</h2>
+
+                <p>For questions about this Privacy Policy:</p>
+                <p><strong>Ampera SA</strong><br>
+                Lugano, Switzerland<br>
+                Email: support@podtxt.com<br>
+                Website: <a href="https://www.podtxt.com">https://www.podtxt.com</a></p>
+
+                <h3>Data Protection Officer</h3>
+                <p>For specific data protection matters:<br>
+                Email: dpo@podtxt.com</p>
+            </div>
+
+            <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e5e5e5;">
+            
+            <p style="text-align: center; color: #999; font-size: 0.9rem;">
+                <strong>Last updated:</strong> January 15, 2025<br>
+                <strong>Version:</strong> 3.0
+            </p>
         </div>
-
-        <div class="cookie-control-box">
-            <h4>Mobile Settings:</h4>
-            <ul>
-                <li>iOS: Settings > Safari > Block all cookies</li>
-                <li>Android: Settings > Apps > Browser > Cookies</li>
-            </ul>
-        </div>
-
-        <div class="cookie-control-box">
-            <h4>Third-Party Opt-Out:</h4>
-            <ul>
-                <li><a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-Out</a></li>
-                <li><a href="https://www.facebook.com/settings?tab=ads">Facebook Opt-Out</a></li>
-                <li><a href="https://optout.networkadvertising.org/">Network Advertising Initiative</a></li>
-            </ul>
-        </div>
-
-        <h3 id="5-4-local-storage">5.4 Local Storage and Session Storage</h3>
-        <p>We also use:</p>
-        <ul>
-            <li><strong>Local Storage:</strong> Stores persistent data on your device</li>
-            <li><strong>Session Storage:</strong> Stores temporary data for the current session</li>
-            <li><strong>Web Beacons:</strong> Small invisible files to track usage</li>
-            <li><strong>Pixels:</strong> Tracking elements for advertising</li>
-        </ul>
-
-        <h3 id="5-5-tracking-providers">5.5 Third-Party Tracking Providers</h3>
-        <p>The following services may track your activity:</p>
-        <ul>
-            <li>Google Analytics, Firebase Analytics</li>
-            <li>Facebook Pixel, LinkedIn Insight Tag</li>
-            <li>Hotjar, FullStory for heatmaps</li>
-            <li>Intercom, Drift for chat support</li>
-        </ul>
-
-        <h2 id="6-data-retention">6. Data Retention</h2>
-
-        <h3 id="6-1-retention-periods">6.1 Retention Periods</h3>
-        <p>We retain your data only for as long as necessary:</p>
-        <ul>
-            <li><strong>Account Data:</strong> Until account deletion</li>
-            <li><strong>Usage Data:</strong> 2 years for analysis and improvements</li>
-            <li><strong>Payment Data:</strong> 7 years for tax obligations</li>
-            <li><strong>Support Data:</strong> 3 years for customer assistance</li>
-            <li><strong>Marketing Data:</strong> Until consent withdrawal</li>
-        </ul>
-
-        <h3 id="6-2-retention-criteria">6.2 Retention Criteria</h3>
-        <p>Retention periods are based on:</p>
-        <ul>
-            <li>Need to provide services</li>
-            <li>Legal and tax obligations</li>
-            <li>Dispute resolution</li>
-            <li>Service improvement</li>
-        </ul>
-
-        <h3 id="6-3-data-deletion">6.3 Data Deletion</h3>
-        <p>Your data is deleted:</p>
-        <ul>
-            <li>Upon your request</li>
-            <li>Upon account closure</li>
-            <li>Upon expiration of retention period</li>
-            <li>In case of prolonged inactivity</li>
-        </ul>
-
-        <h2 id="7-security-practices">7. Security Practices for Mobile</h2>
-
-        <h3 id="7-1-secure-storage">7.1 Secure Local Storage</h3>
-        <p><strong>Mobile-Specific Storage:</strong></p>
-        <ul>
-            <li>Android: flutter_secure_storage or EncryptedSharedPreferences for sensitive data</li>
-            <li>iOS: iOS Keychain for secure credential storage</li>
-            <li>Data encryption for all locally stored information</li>
-        </ul>
-
-        <h3 id="7-2-communication-security">7.2 Communication Security</h3>
-        <p><strong>Encrypted Communication:</strong></p>
-        <ul>
-            <li>HTTPS/TLS for all data in transit</li>
-            <li>Certificate pinning for additional security</li>
-            <li>End-to-end encryption for sensitive communications</li>
-        </ul>
-
-        <h3 id="7-3-runtime-protection">7.3 Runtime Protection</h3>
-        <p><strong>Mobile Application Security:</strong></p>
-        <ul>
-            <li>Obfuscation and ProGuard for Android applications</li>
-            <li>Flutter build optimization for all platforms</li>
-            <li>Root/jailbreak detection mechanisms</li>
-            <li>Anti-tampering measures</li>
-        </ul>
-
-        <h3 id="7-4-data-protection">7.4 Data Protection Practices</h3>
-        <p><strong>Mobile Data Handling:</strong></p>
-        <ul>
-            <li>Do not store sensitive data permanently on the device</li>
-            <li>Does not record personal data in application logs or crash logs</li>
-            <li>Automatic session timeouts</li>
-            <li>Secure data transmission protocols</li>
-        </ul>
-
-        <h3 id="7-5-organizational-security">7.5 Organizational Security Measures</h3>
-        <p><strong>Data Protection Policies:</strong></p>
-        <ul>
-            <li>Data protection policies for all employees</li>
-            <li>Regular security training</li>
-            <li>Strict access controls</li>
-            <li>Periodic audits</li>
-        </ul>
-
-        <p><strong>Monitoring and Auditing:</strong></p>
-        <ul>
-            <li>Complete security logs</li>
-            <li>Anomaly monitoring</li>
-            <li>Access audit trails</li>
-            <li>Incident response plan</li>
-        </ul>
-
-        <h2 id="8-international-transfers">8. International Transfers</h2>
-
-        <h3 id="8-1-data-transfers">8.1 Data Transfers</h3>
-        <p>Your data may be transferred and processed in countries different from your country of residence. We use appropriate measures to protect your data during these transfers.</p>
-
-        <h3 id="8-2-adequacy-safeguards">8.2 Adequacy and Safeguards</h3>
-        <p>For transfers to third countries:</p>
-        <ul>
-            <li>We use standard agreements (SCC) approved by the European Commission</li>
-            <li>We implement additional security measures</li>
-            <li>We regularly monitor compliance</li>
-        </ul>
-
-        <h2 id="9-privacy-rights">9. Your Privacy Rights</h2>
-
-        <h3 id="9-1-withdraw-consent">9.1 Right to Withdraw Consent</h3>
-        <p>You have the right to withdraw consent to the processing of your data at any time. Withdrawal does not affect the lawfulness of previous processing.</p>
-
-        <h3 id="9-2-access-rectification">9.2 Right of Access and Rectification</h3>
-        <p>You can request:</p>
-        <ul>
-            <li>Copy of your personal data</li>
-            <li>Information about processing</li>
-            <li>Correction of inaccurate data</li>
-            <li>Update of incomplete data</li>
-        </ul>
-
-        <h3 id="9-3-erasure">9.3 Right to Erasure (Right to be Forgotten)</h3>
-        <p>You can request deletion of your data when:</p>
-        <ul>
-            <li>Data is no longer necessary</li>
-            <li>You withdraw consent</li>
-            <li>Data has been unlawfully processed</li>
-            <li>Legal obligation to delete</li>
-        </ul>
-
-        <h3 id="9-4-restriction">9.4 Right to Restriction of Processing</h3>
-        <p>You can request restriction when:</p>
-        <ul>
-            <li>You contest data accuracy</li>
-            <li>Processing is unlawful</li>
-            <li>Data is no longer needed but we retain it for legal defense</li>
-        </ul>
-
-        <h3 id="9-5-object">9.5 Right to Object to Processing</h3>
-        <p>You can object to processing based on:</p>
-        <ul>
-            <li>Legitimate interest</li>
-            <li>Direct marketing</li>
-            <li>Automated profiling</li>
-        </ul>
-
-        <h3 id="9-6-portability">9.6 Right to Data Portability</h3>
-        <p>You can request:</p>
-        <ul>
-            <li>Your data in structured format</li>
-            <li>Direct transfer to another controller</li>
-            <li>Copy in readable format</li>
-        </ul>
-
-        <h3 id="9-7-identity-verification">9.7 Identity Verification Process</h3>
-        <p>To protect your data, we verify your identity before processing requests using:</p>
-        <ul>
-            <li>Email verification</li>
-            <li>Identity documents</li>
-            <li>Security questions</li>
-        </ul>
-
-        <h3 id="9-8-response-times">9.8 Response Times and Contact Methods</h3>
-        <p>We respond to your requests within:</p>
-        <ul>
-            <li><strong>30 days</strong> for standard requests</li>
-            <li><strong>90 days</strong> for complex requests</li>
-            <li><strong>Immediately</strong> for consent withdrawal requests</li>
-        </ul>
-
-        <p><strong>Contact methods:</strong></p>
-        <ul>
-            <li>Email: privacy@podtxt.com</li>
-            <li>Online form: https://www.podtxt.com/privacy-request</li>
-            <li>Mail: Ampera SA, Lugano, Switzerland</li>
-        </ul>
-
-        <h3 id="9-9-limitations">9.9 Limitations to Your Rights</h3>
-        <p>Your rights may be limited when:</p>
-        <ul>
-            <li>Necessary for legal obligations</li>
-            <li>To protect rights and freedoms of others</li>
-            <li>For scientific research purposes</li>
-            <li>For legal defense</li>
-        </ul>
-
-        <h3 id="9-10-notification-third-parties">9.10 Notification to Third Parties</h3>
-        <p>When we delete or rectify your data, we notify third parties who have received it, unless this is impossible or requires disproportionate effort.</p>
-
-        <h3 id="9-11-automated-decisions">9.11 Automated Decision-Making and Profiling</h3>
-        <p>If we use automated decisions that concern you:</p>
-        <ul>
-            <li>We inform you of the logic used</li>
-            <li>We explain the consequences</li>
-            <li>We offer human intervention</li>
-            <li>We allow you to contest the decision</li>
-        </ul>
-
-        <h3 id="9-12-lodge-complaint">9.12 Right to Lodge a Complaint</h3>
-        <p>You have the right to lodge a complaint with the data protection authority in your country:</p>
-        <ul>
-            <li><strong>Italy:</strong> Garante per la protezione dei dati personali</li>
-            <li><strong>EU:</strong> Data protection authority of your member state</li>
-            <li><strong>United Kingdom:</strong> Information Commissioner's Office</li>
-            <li><strong>Switzerland:</strong> Federal Data Protection and Information Commissioner</li>
-        </ul>
-
-        <div class="app-store-section">
-            <h2 id="10-apple-nutrition">10. Apple App Store Privacy Nutrition Labels</h2>
-
-            <h3 id="10-1-data-tracking">10.1 Data Used to Track You</h3>
-            <p><strong>Device Identifiers:</strong></p>
-            <ul>
-                <li>Advertising identifier (IDFA) for personalized advertising</li>
-                <li>Vendor identifier (IDFV) for internal analytics</li>
-            </ul>
-
-            <p><strong>Usage Data:</strong></p>
-            <ul>
-                <li>App interactions</li>
-                <li>Preferences and settings</li>
-                <li>Performance metrics</li>
-            </ul>
-
-            <h3 id="10-2-data-linked">10.2 Data Linked to You</h3>
-            <p><strong>Personal Information:</strong></p>
-            <ul>
-                <li>Name, email, phone number</li>
-                <li>Payment information (processed by third parties)</li>
-                <li>Content you upload or share</li>
-            </ul>
-
-            <p><strong>Usage Data:</strong></p>
-            <ul>
-                <li>Browsing history</li>
-                <li>Preferences and settings</li>
-                <li>Content interactions</li>
-            </ul>
-
-            <h3 id="10-3-data-not-linked">10.3 Data Not Linked to You</h3>
-            <p><strong>Aggregated Analytics:</strong></p>
-            <ul>
-                <li>Anonymized usage statistics</li>
-                <li>Performance metrics</li>
-                <li>Diagnostic data</li>
-            </ul>
-
-            <h3 id="10-4-data-transparency">10.4 Data Collection Transparency</h3>
-            <p><strong>User Controls:</strong></p>
-            <ul>
-                <li>Privacy settings in the app</li>
-                <li>Opt-out options for tracking</li>
-                <li>Granular controls for each data type</li>
-            </ul>
-
-            <p><strong>Updates:</strong></p>
-            <ul>
-                <li>Notifications for data collection changes</li>
-                <li>Privacy policy change history</li>
-                <li>Transparency on new data uses</li>
-            </ul>
-
-            <h3 id="10-5-privacy-questions">10.5 Contact for Privacy Questions</h3>
-            <p>For questions about collected data:</p>
-            <ul>
-                <li>Email: privacy@podtxt.com</li>
-                <li>Form: https://www.podtxt.com/privacy-questions</li>
-                <li>Phone: +41 91 XXX XXXX</li>
-            </ul>
-        </div>
-
-        <div class="app-store-section">
-            <h2 id="11-google-play">11. Google Play Data Safety</h2>
-
-            <h3 id="11-1-data-collection">11.1 Data Collection and Usage</h3>
-            <p><strong>Data Collected:</strong></p>
-            <ul>
-                <li>Personal information (name, email)</li>
-                <li>Usage data and analytics</li>
-                <li>Device information</li>
-                <li>Location data (if permitted)</li>
-            </ul>
-
-            <p><strong>Collection Purposes:</strong></p>
-            <ul>
-                <li>Provide and improve services</li>
-                <li>Personalize experience</li>
-                <li>Communicate with users</li>
-                <li>Ensure security</li>
-            </ul>
-
-            <h3 id="11-2-sharing-practices">11.2 Data Sharing Practices</h3>
-            <p><strong>Service Providers:</strong></p>
-            <ul>
-                <li>Sharing with essential service providers</li>
-                <li>Data processing agreements in place</li>
-                <li>Limited to necessary access</li>
-            </ul>
-
-            <p><strong>Third Parties:</strong></p>
-            <ul>
-                <li>Only with explicit consent</li>
-                <li>For marketing purposes (opt-in)</li>
-                <li>Aggregated and anonymized data</li>
-            </ul>
-
-            <h3 id="11-3-security-measures">11.3 Data Security Measures</h3>
-            <p><strong>Technical Protection:</strong></p>
-            <ul>
-                <li>End-to-end encryption</li>
-                <li>Strict access controls</li>
-                <li>24/7 security monitoring</li>
-            </ul>
-
-            <p><strong>Organizational Protection:</strong></p>
-            <ul>
-                <li>Employee privacy training</li>
-                <li>Regular security audits</li>
-                <li>Incident response procedures</li>
-            </ul>
-
-            <h3 id="11-4-data-rights">11.4 Your Data Rights</h3>
-            <p><strong>GDPR Rights:</strong></p>
-            <ul>
-                <li>Access, rectification, deletion</li>
-                <li>Portability and objection</li>
-                <li>Processing restriction</li>
-            </ul>
-
-            <p><strong>User Controls:</strong></p>
-            <ul>
-                <li>Privacy settings in the app</li>
-                <li>Opt-out options</li>
-                <li>Consent management</li>
-            </ul>
-
-            <h3 id="11-5-data-retention-google">11.5 Data Retention</h3>
-            <p><strong>Retention Periods:</strong></p>
-            <ul>
-                <li>Account data: until deletion</li>
-                <li>Usage data: 2 years</li>
-                <li>Payment data: 7 years (tax obligations)</li>
-            </ul>
-
-            <p><strong>Deletion Criteria:</strong></p>
-            <ul>
-                <li>User request</li>
-                <li>Prolonged inactivity</li>
-                <li>Account closure</li>
-            </ul>
-
-            <h3 id="11-6-updates-safety">11.6 Updates to Data Safety Information</h3>
-            <p><strong>Change Notifications:</strong></p>
-            <ul>
-                <li>Privacy policy updates</li>
-                <li>New data collection features</li>
-                <li>Changes to sharing practices</li>
-            </ul>
-
-            <p><strong>Version History:</strong></p>
-            <ul>
-                <li>Data safety change log</li>
-                <li>Update dates</li>
-                <li>Change summaries</li>
-            </ul>
-        </div>
-
-        <h2 id="12-children">12. Children</h2>
-
-        <h3 id="12-1-minimum-age">12.1 Minimum Age</h3>
-        <p>Our Site is not intended for children under 18 years of age. We do not knowingly collect personal information from children under 18.</p>
-
-        <h3 id="12-2-children-protection">12.2 Children Protection</h3>
-        <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
-
-        <h2 id="2-7-ccpa-california">2.7 California Consumer Privacy Rights (CCPA/CalOPPA)</h2>
-        
-        <h3 id="2-7-1-shine-light">2.7.1 Shine The Light Law (Section 1798.83)</h3>
-        <p>California residents have the right to request information about third parties to whom we have disclosed personal information for direct marketing purposes during the preceding calendar year.</p>
-
-        <h3 id="2-7-2-right-know">2.7.2 Right to Know</h3>
-        <p>You have the right to request information about:</p>
-        <ul>
-            <li>Categories of personal information we collect</li>
-            <li>Categories of sources from which personal information is collected</li>
-            <li>Business or commercial purpose for collecting personal information</li>
-            <li>Categories of third parties with whom we share personal information</li>
-            <li>Specific pieces of personal information we have collected about you</li>
-        </ul>
-
-        <h3 id="2-7-3-right-delete">2.7.3 Right to Delete</h3>
-        <p>You have the right to request deletion of personal information we have collected from you, subject to certain exceptions under California law.</p>
-
-        <h3 id="2-7-4-right-opt-out">2.7.4 Right to Opt-Out</h3>
-        <p>You have the right to opt-out of the sale of your personal information. We do not sell personal information as defined by CCPA.</p>
-
-        <h3 id="2-7-5-data-enrichment">2.7.5 Data Enrichment</h3>
-        <p>We may enhance our records by obtaining additional information from third-party sources to provide better services.</p>
-
-        <h3 id="2-7-6-non-discrimination">2.7.6 Non-Discrimination</h3>
-        <p>We will not discriminate against you for exercising your CCPA rights, including:</p>
-        <ul>
-            <li>Denying goods or services</li>
-            <li>Charging different prices or rates</li>
-            <li>Providing different quality of goods or services</li>
-            <li>Suggesting you may receive different treatment</li>
-        </ul>
-
-        <h3 id="2-7-7-identity-verification">2.7.7 Identity Verification Process</h3>
-        <p>To protect your privacy, we verify your identity before processing CCPA requests using:</p>
-        <ul>
-            <li>Email verification for low-risk requests</li>
-            <li>Identity documents for high-risk requests</li>
-            <li>Account authentication for existing users</li>
-        </ul>
-
-        <div class="contact-info">
-            <h2 id="13-contact">13. Contact Information</h2>
-
-            <h3 id="13-1-contact-us">13.1 How to Contact Us</h3>
-            <p>For questions about this Privacy Policy:</p>
-            <p><strong>Ampera SA</strong><br>
-            Lugano, Switzerland<br>
-            Email: privacy@podtxt.com<br>
-            Website: https://www.podtxt.com</p>
-
-            <h3 id="13-2-dpo">13.2 Data Protection Officer</h3>
-            <p>For specific data protection matters:<br>
-            Email: dpo@podtxt.com</p>
-
-            <h3 id="13-3-supervisory">13.3 Supervisory Authorities</h3>
-            <p>To lodge complaints:</p>
-            <ul>
-                <li><strong>Italy:</strong> Garante per la protezione dei dati personali</li>
-                <li><strong>EU:</strong> Data protection authority of your member state</li>
-                <li><strong>United Kingdom:</strong> Information Commissioner's Office</li>
-                <li><strong>Switzerland:</strong> Federal Data Protection and Information Commissioner</li>
-            </ul>
-        </div>
-
-        <hr style="margin: 2rem 0; border: none; border-top: 1px solid #dee2e6;">
-        
-        <p style="text-align: center; color: #6c757d; font-size: 0.9rem;">
-            <strong>Last updated:</strong> January 15, 2025<br>
-            <strong>Version:</strong> 3.0
-        </p>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="/terms-of-service">Terms of Service</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+            </div>
+            <div class="footer-copyright">
+                © 2025 Ampera SA, All rights reserved.
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
