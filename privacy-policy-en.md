@@ -69,38 +69,34 @@ We use the information we collect to:
 - Comply with legal obligations
 - Enforce our terms of service
 
-## 4. Sharing with Third Parties
+## 4. Third-Party Services and SDKs
 
 ### 4.1 Service Providers and Third-Party Processors
 
 We share your data with service providers and third-party processors who help us provide our services:
 
-**Payment Processors:**
-- Stripe, PayPal, Apple Pay, Google Pay for processing payments and subscriptions
-- These services handle payment data securely and in compliance with PCI DSS
-
-**Analytics Services:**
-- Google Analytics, Firebase Analytics for analyzing website usage
-- Mixpanel, Amplitude for behavioral analysis and engagement metrics
+**Firebase Services:**
+- Firebase (Google Analytics, Firebase, Messaging) for app analytics, messaging, and cloud services 
+- These services handle app data and provide mobile-specific functionality
 
 **Cloud Storage and Infrastructure:**
 - AWS (Amazon Web Services), Google Cloud Platform for hosting and storage
-- Cloudflare for CDN and security
+- These services store and process app data securely
 
-**Customer Support:**
-- Zendesk, Intercom for ticket management and customer support
-- Crisp, Drift for real-time chat
-
-**Marketing Tools:**
-- Mailchimp, SendGrid for email marketing
-- HubSpot, Marketo for marketing automation
-- Facebook Pixel, Google Ads for advertising
+**Subscription Management:**
+- RevenueCat or in_app_purchase for subscription management and processing
+- Apple StoreKit and Google Play Billing for native payment systems
+- These services handle subscription data and payment processing
 
 **App Store Platforms:**
 - Apple App Store Connect for iOS distribution
 - Google Play Console for Android distribution
 
-All service providers are bound by data processing agreements that ensure the protection of your data.
+**Type of data accessed:**
+- Device ID, error logs, anonymous usage data, transaction information
+
+All third parties are bound by a Data Processing Agreement (DPA) that ensures the protection of your data.
+Some services perform cross-border data transfers (example: Firebase to the US).
 
 ### 4.2 Business Transfers
 
@@ -219,28 +215,39 @@ Your data is deleted:
 - Upon expiration of retention period
 - In case of prolonged inactivity
 
-## 7. Security Measures
+## 7. Security Practices for Mobile
 
-### 7.1 Technical Security Measures
+### 7.1 Secure Local Storage
 
-**Encryption:**
-- TLS/SSL for data in transit
-- AES-256 for data at rest
-- End-to-end encryption for sensitive messages
+**Mobile-Specific Storage:**
+- Android: flutter_secure_storage or EncryptedSharedPreferences for sensitive data
+- iOS: iOS Keychain for secure credential storage
+- Data encryption for all locally stored information
 
-**Access Controls:**
-- Multi-factor authentication (MFA)
-- Role-based access control (RBAC)
-- Secure session management
-- Automatic timeouts
+### 7.2 Communication Security
 
-**Infrastructure Security:**
-- Firewall and intrusion detection
-- 24/7 monitoring
-- Encrypted backups
-- Disaster recovery
+**Encrypted Communication:**
+- HTTPS/TLS for all data in transit
+- Certificate pinning for additional security
+- End-to-end encryption for sensitive communications
 
-### 7.2 Organizational Security Measures
+### 7.3 Runtime Protection
+
+**Mobile Application Security:**
+- Obfuscation and ProGuard for Android applications
+- Flutter build optimization for all platforms
+- Root/jailbreak detection mechanisms
+- Anti-tampering measures
+
+### 7.4 Data Protection Practices
+
+**Mobile Data Handling:**
+- Do not store sensitive data permanently on the device
+- Does not record personal data in application logs or crash logs
+- Automatic session timeouts
+- Secure data transmission protocols
+
+### 7.5 Organizational Security Measures
 
 **Data Protection Policies:**
 - Data protection policies for all employees
@@ -248,25 +255,11 @@ Your data is deleted:
 - Strict access controls
 - Periodic audits
 
-**Backup and Recovery:**
-- Daily automatic backups
-- Geographic data replication
-- Regular recovery testing
-- Disaster recovery procedures
-
 **Monitoring and Auditing:**
 - Complete security logs
 - Anomaly monitoring
 - Access audit trails
 - Incident response plan
-
-### 7.3 Security Disclaimer
-
-Despite our security measures, no system is completely secure. We cannot guarantee absolute security of your data. We recommend that you:
-- Use strong passwords
-- Keep your devices updated
-- Do not share your credentials
-- Report any issues to us immediately
 
 ## 8. International Transfers
 

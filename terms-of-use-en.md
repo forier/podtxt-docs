@@ -227,13 +227,43 @@ These Terms constitute the entire agreement between you and us regarding the use
 
 Copyright © 2023 Ampera SA All rights reserved. All trademarks, logos and service marks ("Marks") displayed on the Site are our property or the property of other third parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.
 
-### 7.8 Apple App Store Compliance
+### 7.8 Apple App Store (Privacy + Subscription Compliance)
 
-Our app complies with Apple Privacy Nutrition Labels and App Store Review Guidelines. All statements about data collection and usage in App Store Connect exactly match our privacy policies. We regularly update our declarations to reflect any changes to our data collection practices.
+**Working Links:**
+Our app provides working links to:
+- Privacy Policy: Available in-app and on our website
+- Terms of Use (EULA): This document, accessible via in-app settings
 
-### 7.9 Google Play Data Safety Compliance
+**Subscription Information:**
+- Name: Premium Access
+- Price and duration: Displayed within the app (e.g. monthly/yearly subscriptions)
+- Automatic renewal: Valid unless cancelled at least 24 hours before the end of the period
+- Users can manage subscriptions in Settings > Apple ID > Subscriptions
 
-Our app complies with Google Play Data Safety requirements and Developer Program Policies. We provide accurate and complete information about data collected, used, and shared in the app. We keep our Data Safety declarations updated to reflect our current practices.
+**App Tracking Transparency (ATT):**
+ATT was implemented before the tracking SDK was active, ensuring compliance with iOS 14.5+ requirements.
+
+**Privacy Nutrition Labels:**
+Our Privacy Nutrition labels correspond to the data actually collected:
+- Device ID for analytics and performance monitoring
+- Crash logs for app improvement and debugging
+- Anonymous usage analytics for service enhancement
+
+### 7.9 Google Play Store (Data Safety + Billing)
+
+**Data Safety Form Completion:**
+Our Data Safety Form is completed as follows:
+- Data type: Device ID, crash log, analytics, email (if login is used)
+- Purpose: Analytics, performance improvement, account management
+- Third-party SDKs: Firebase, RevenueCat for app functionality
+
+**Privacy Policy Link:**
+Privacy Policy link is available and consistent across all distribution channels, updated with each app release.
+
+**Google Play Billing (if applicable):**
+If using Google Play Billing:
+- Automatic renewal and refund policy information is clearly explained within the app
+- Users can manage subscriptions through Google Play Store account settings
 
 ### 7.10 Contact Information
 

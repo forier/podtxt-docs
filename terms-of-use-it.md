@@ -227,13 +227,43 @@ Questi Termini costituiscono l'intero accordo tra te e noi riguardo all'uso del 
 
 Copyright © 2023 Ampera SA Tutti i diritti riservati. Tutti i marchi, loghi e marchi di servizio ("Marchi") visualizzati sul Sito sono la nostra proprietà o la proprietà di altre terze parti. Non ti è permesso utilizzare questi Marchi senza il nostro previo consenso scritto o il consenso di tale terza parte che può possedere i Marchi.
 
-### 7.8 Conformità Apple App Store
+### 7.8 Apple App Store (Privacy + Conformità Abbonamenti)
 
-La nostra app è conforme alle Apple Privacy Nutrition Labels e alle App Store Review Guidelines. Tutte le dichiarazioni sulla raccolta e l'utilizzo dei dati nell'App Store Connect corrispondono esattamente alle nostre policy di privacy. Aggiorniamo regolarmente le nostre dichiarazioni per riflettere eventuali modifiche alle nostre pratiche di raccolta dati.
+**Link Funzionanti:**
+La nostra app fornisce link funzionanti a:
+- Privacy Policy: Disponibile nell'app e sul nostro sito web
+- Termini di Utilizzo (EULA): Questo documento, accessibile tramite impostazioni in-app
 
-### 7.9 Conformità Google Play Data Safety
+**Informazioni Abbonamento:**
+- Nome: Premium Access
+- Prezzo e durata: Mostrati all'interno dell'app (es. abbonamenti mensili/annuali)
+- Rinnovo automatico: Valido a meno che non venga cancellato almeno 24 ore prima della fine del periodo
+- Gli utenti possono gestire gli abbonamenti in Impostazioni > Apple ID > Abbonamenti
 
-La nostra app è conforme ai requisiti Google Play Data Safety e alle Developer Program Policies. Forniamo informazioni accurate e complete sui dati raccolti, utilizzati e condivisi nell'app. Manteniamo aggiornate le nostre dichiarazioni Data Safety per riflettere le nostre pratiche attuali.
+**App Tracking Transparency (ATT):**
+ATT è stato implementato prima che l'SDK di tracking fosse attivo, garantendo la conformità ai requisiti iOS 14.5+.
+
+**Privacy Nutrition Labels:**
+Le nostre Privacy Nutrition Labels corrispondono ai dati effettivamente raccolti:
+- Device ID per analisi e monitoraggio delle prestazioni
+- Log dei crash per miglioramento app e debug
+- Analisi anonime di utilizzo per miglioramento servizi
+
+### 7.9 Google Play Store (Data Safety + Billing)
+
+**Completamento Data Safety Form:**
+Il nostro Data Safety Form è completato come segue:
+- Tipo di dati: Device ID, log crash, analytics, email (se viene utilizzato il login)
+- Finalità: Analytics, miglioramento prestazioni, gestione account
+- SDK terze parti: Firebase, RevenueCat per funzionalità app
+
+**Link Privacy Policy:**
+Il link alla Privacy Policy è disponibile e coerente su tutti i canali di distribuzione, aggiornato ad ogni rilascio dell'app.
+
+**Google Play Billing (se applicabile):**
+Se si utilizza Google Play Billing:
+- Le informazioni su rinnovo automatico e politica di rimborso sono chiaramente spiegate nell'app
+- Gli utenti possono gestire gli abbonamenti tramite le impostazioni dell'account Google Play Store
 
 ### 7.10 Informazioni di Contatto
 

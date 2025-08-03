@@ -1,8 +1,14 @@
-# 🤖 Android Runtime Permissions Implementation Guide
+# 🤖 Android Permissions & Justifications Implementation Guide
 
 ## Overview
 
-This guide provides comprehensive information about implementing Android runtime permissions in your app, including the required manifest entries, best practices, and user experience considerations.
+This guide provides comprehensive information about implementing Android runtime permissions using the permission_handler package for Flutter/hybrid apps, including the required manifest entries, specific justifications, and runtime permission management.
+
+**Key Approach:**
+- Use the permission_handler package for runtime permissions management
+- Justifications are displayed via a dialog before the request
+- Permissions are only requested when needed (runtime) and are optional if not a core part of the feature
+- Does not ask for location, unless the feature is added in the future
 
 ## Required Manifest Entries
 
@@ -14,98 +20,99 @@ This guide provides comprehensive information about implementing Android runtime
 <uses-feature android:name="android.hardware.camera" android:required="false" />
 ```
 
-**Rationale:** "This app needs camera access to let you take photos and videos for creating content, scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose."
+**Justification:** "To take a profile picture"
 
-**When to use:** Photo/video capture, document scanning, QR code scanning
-**Implementation:** Use CameraX or Camera2 API
+**When to use:** Profile picture upload, document scanning, QR code scanning
+**Implementation:** Use permission_handler package with camera plugin
 
-#### 2. Location Permissions
-```xml
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-feature android:name="android.hardware.location" android:required="false" />
-```
-
-**Rationale:** "This app needs access to your location to provide location-based services, such as finding nearby content, location-specific features, or improving your experience with relevant local information."
-
-**When to use:** Location-based services, nearby content, local features
-**Implementation:** Use FusedLocationProviderClient
-
-#### 3. Microphone Permission
+#### 2. Microphone Permission
 ```xml
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-feature android:name="android.hardware.microphone" android:required="false" />
 ```
 
-**Rationale:** "This app needs access to your microphone to enable voice recording, audio messages, voice commands, and other audio-related features. Audio recordings will only be captured when you actively use audio features."
+**Justification:** "To record audio (if enabled)"
 
-**When to use:** Voice recording, audio messages, voice commands
-**Implementation:** Use MediaRecorder or AudioRecord
+**When to use:** Voice recording, audio messages (only if feature is enabled)
+**Implementation:** Use permission_handler package with audio recording plugin
 
-#### 4. Storage Permissions
+#### 3. Storage Permissions
 ```xml
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
 ```
 
-**Rationale:** "This app needs access to your photos and videos to let you select and upload content from your device. We only access files you specifically choose to share."
+**Justification:** "To import or export files"
 
-**When to use:** Photo selection, content sharing, file saving
-**Implementation:** Use MediaStore API for Android 10+, SAF for older versions
+**When to use:** File import/export, content sharing, document storage
+**Implementation:** Use permission_handler package with file system access
 
-## Implementation Best Practices
-
-### 1. Just-in-Time Permission Requests
-
-**❌ Don't request all permissions at app launch**
-```kotlin
-// Bad: Requesting all permissions immediately
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        
-        requestCameraPermission()
-        requestLocationPermission()
-        requestMicrophonePermission()
-    }
-}
+### Location Permission (Not Currently Used)
+```xml
+<!-- Not currently implemented - may be added in future versions -->
+<!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+<!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
 ```
 
-**✅ Request permissions when needed**
-```kotlin
-// Good: Request permission when user tries to use feature
-class CameraActivity : AppCompatActivity() {
-    private val CAMERA_PERMISSION_REQUEST = 100
+**Note:** We do not currently ask for location permissions, unless the feature is added in the future.
+
+## Permission Handler Implementation
+
+### 1. Flutter Permission Handler Setup
+
+```yaml
+# pubspec.yaml
+dependencies:
+  permission_handler: ^11.0.0
+```
+
+### 2. Permission Request with Justification Dialog
+
+```dart
+import 'package:permission_handler/permission_handler.dart';
+
+class PermissionManager {
+  static Future<bool> requestCameraPermission() async {
+    // Show justification dialog first
+    bool userAccepts = await _showJustificationDialog(
+      'Camera Permission', 
+      'To take a profile picture'
+    );
     
-    fun takePhotoButtonClicked() {
-        when {
-            ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED -> {
-                openCamera()
-            }
-            shouldShowRequestPermissionRationale(Manifest.permission.CAMERA) -> {
-                showCameraPermissionRationale()
-            }
-            else -> {
-                requestPermissions(arrayOf(Manifest.permission.CAMERA), CAMERA_PERMISSION_REQUEST)
-            }
-        }
-    }
-}
-```
-
-### 2. Permission Rationale Dialog
-
-```kotlin
-fun showCameraPermissionRationale() {
-    AlertDialog.Builder(this)
-        .setTitle("Camera Permission Required")
-        .setMessage("This app needs camera access to let you take photos and videos for creating content, scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose.")
-        .setPositiveButton("Grant Permission") { _, _ ->
-            requestPermissions(arrayOf(Manifest.permission.CAMERA), CAMERA_PERMISSION_REQUEST)
-        }
-        .setNegativeButton("Cancel", null)
-        .show()
+    if (!userAccepts) return false;
+    
+    var status = await Permission.camera.request();
+    return status == PermissionStatus.granted;
+  }
+  
+  static Future<bool> requestMicrophonePermission() async {
+    bool userAccepts = await _showJustificationDialog(
+      'Microphone Permission', 
+      'To record audio (if enabled)'
+    );
+    
+    if (!userAccepts) return false;
+    
+    var status = await Permission.microphone.request();
+    return status == PermissionStatus.granted;
+  }
+  
+  static Future<bool> requestStoragePermission() async {
+    bool userAccepts = await _showJustificationDialog(
+      'Storage Permission', 
+      'To import or export files'
+    );
+    
+    if (!userAccepts) return false;
+    
+    var status = await Permission.storage.request();
+    return status == PermissionStatus.granted;
+  }
+  
+  static Future<bool> _showJustificationDialog(String title, String message) async {
+    // Implementation of justification dialog
+    // Return true if user accepts, false if declines
+  }
 }
 ```
 

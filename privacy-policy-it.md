@@ -69,38 +69,34 @@ Utilizziamo le informazioni raccolte per:
 - Rispettare obblighi legali
 - Applicare i nostri termini di servizio
 
-## 4. Condivisione con Terze Parti
+## 4. Servizi di Terze Parti e SDK
 
 ### 4.1 Service Providers e Third-Party Processors
 
 Condividiamo i tuoi dati con service provider e processori di terze parti che ci aiutano a fornire i nostri servizi:
 
-**Payment Processors:**
-- Stripe, PayPal, Apple Pay, Google Pay per processare pagamenti e abbonamenti
-- Questi servizi gestiscono i dati di pagamento in modo sicuro e conforme a PCI DSS
-
-**Analytics Services:**
-- Google Analytics, Firebase Analytics per analizzare l'utilizzo del sito
-- Mixpanel, Amplitude per analisi comportamentali e metriche di engagement
+**Servizi Firebase:**
+- Firebase (Google Analytics, Firebase, Messaging) per analisi app, messaging e servizi cloud
+- Questi servizi gestiscono i dati dell'app e forniscono funzionalità mobile-specifiche
 
 **Cloud Storage e Infrastructure:**
 - AWS (Amazon Web Services), Google Cloud Platform per hosting e storage
-- Cloudflare per CDN e sicurezza
+- Questi servizi memorizzano e processano i dati dell'app in modo sicuro
 
-**Customer Support:**
-- Zendesk, Intercom per gestione ticket e supporto clienti
-- Crisp, Drift per chat in tempo reale
-
-**Marketing Tools:**
-- Mailchimp, SendGrid per email marketing
-- HubSpot, Marketo per automazione marketing
-- Facebook Pixel, Google Ads per advertising
+**Gestione Abbonamenti:**
+- RevenueCat o in_app_purchase per gestione e processamento abbonamenti
+- Apple StoreKit e Google Play Billing per sistemi di pagamento nativi
+- Questi servizi gestiscono i dati di abbonamento e processamento pagamenti
 
 **App Store Platforms:**
 - Apple App Store Connect per distribuzione iOS
 - Google Play Console per distribuzione Android
 
-Tutti i service provider sono vincolati da accordi di data processing che garantiscono la protezione dei tuoi dati.
+**Tipo di dati accessibili:**
+- Device ID, log di errore, dati di utilizzo anonimi, informazioni transazioni
+
+Tutte le terze parti sono vincolate da un Accordo di Data Processing (DPA) che garantisce la protezione dei tuoi dati.
+Alcuni servizi eseguono trasferimenti di dati cross-border (esempio: Firebase verso gli US).
 
 ### 4.2 Business Transfers
 
@@ -219,28 +215,39 @@ I tuoi dati vengono cancellati:
 - Alla scadenza del periodo di conservazione
 - In caso di inattività prolungata
 
-## 7. Misure di Sicurezza
+## 7. Pratiche di Sicurezza per Mobile
 
-### 7.1 Misure Tecniche di Sicurezza
+### 7.1 Storage Locale Sicuro
 
-**Encryption:**
-- TLS/SSL per dati in transito
-- AES-256 per dati a riposo
-- End-to-end encryption per messaggi sensibili
+**Storage Mobile-Specifico:**
+- Android: flutter_secure_storage o EncryptedSharedPreferences per dati sensibili
+- iOS: iOS Keychain per storage sicuro delle credenziali
+- Cifratura dati per tutte le informazioni memorizzate localmente
 
-**Access Controls:**
-- Autenticazione multi-factor (MFA)
-- Controllo accessi basato su ruoli (RBAC)
-- Session management sicuro
-- Timeout automatici
+### 7.2 Sicurezza delle Comunicazioni
 
-**Infrastructure Security:**
-- Firewall e intrusion detection
-- Monitoraggio 24/7
-- Backup crittografati
-- Disaster recovery
+**Comunicazioni Cifrate:**
+- HTTPS/TLS per tutti i dati in transito
+- Certificate pinning per sicurezza aggiuntiva
+- Cifratura end-to-end per comunicazioni sensibili
 
-### 7.2 Misure Organizzative di Sicurezza
+### 7.3 Protezione Runtime
+
+**Sicurezza Applicazioni Mobile:**
+- Obfuscation e ProGuard per applicazioni Android
+- Ottimizzazione build Flutter per tutte le piattaforme
+- Meccanismi di rilevamento root/jailbreak
+- Misure anti-tampering
+
+### 7.4 Pratiche di Protezione Dati
+
+**Gestione Dati Mobile:**
+- Non memorizzare dati sensibili permanentemente sul dispositivo
+- Non registrare dati personali nei log delle applicazioni o crash log
+- Timeout automatici delle sessioni
+- Protocolli di trasmissione dati sicuri
+
+### 7.5 Misure Organizzative di Sicurezza
 
 **Data Protection Policies:**
 - Politiche di protezione dati per tutti i dipendenti
@@ -248,25 +255,11 @@ I tuoi dati vengono cancellati:
 - Controlli di accesso rigorosi
 - Audit periodici
 
-**Backup e Recovery:**
-- Backup automatici giornalieri
-- Replica geografica dei dati
-- Test di recovery regolari
-- Procedure di disaster recovery
-
 **Monitoring e Auditing:**
 - Log di sicurezza completi
 - Monitoraggio anomalie
 - Audit trail per accessi
 - Incident response plan
-
-### 7.3 Disclaimer sulla Sicurezza
-
-Nonostante le nostre misure di sicurezza, nessun sistema è completamente sicuro. Non possiamo garantire la sicurezza assoluta dei tuoi dati. Ti consigliamo di:
-- Utilizzare password forti
-- Mantenere aggiornati i tuoi dispositivi
-- Non condividere le tue credenziali
-- Segnalarci immediatamente eventuali problemi
 
 ## 8. Trasferimenti Internazionali
 

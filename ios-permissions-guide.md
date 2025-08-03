@@ -1,8 +1,14 @@
-# 📱 iOS Permissions Implementation Guide
+# 📱 iOS Info.plist Usage Descriptions Implementation Guide
 
 ## Overview
 
-This guide provides comprehensive information about implementing iOS permissions in your app, including the required Info.plist entries, best practices, and user experience considerations.
+This guide provides comprehensive information about implementing iOS Info.plist usage descriptions for your app, focusing on declaring permissions only if the feature is used and providing clear, concise explanations.
+
+**Key Approach:**
+- Declare permissions only if the feature is used
+- All reasons for use are clearly written in Info.plist
+- Not using NSLocationWhenInUseUsageDescription because there is no location feature
+- ATT implementation included for tracking permission
 
 ## Required Info.plist Entries
 
@@ -11,143 +17,109 @@ This guide provides comprehensive information about implementing iOS permissions
 #### 1. Camera Permission
 ```xml
 <key>NSCameraUsageDescription</key>
-<string>This app needs access to your camera to allow you to take photos and videos for creating content, scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose to use within the app.</string>
+<string>To upload profile picture</string>
 ```
 
-**When to use:** Photo/video capture, document scanning, QR code scanning
+**When to use:** Profile picture upload, document scanning, QR code scanning
 **Implementation:** Use `AVCaptureDevice` and `UIImagePickerController`
 
-#### 2. Location Permission (When In Use)
-```xml
-<key>NSLocationWhenInUseUsageDescription</key>
-<string>This app needs access to your location to provide location-based services, such as finding nearby content, location-specific features, or improving your experience with relevant local information. Your location is only accessed when you actively use location-based features.</string>
-```
-
-**When to use:** Location-based services, nearby content, local features
-**Implementation:** Use `CLLocationManager` with `requestWhenInUseAuthorization()`
-
-#### 3. Microphone Permission
-```xml
-<key>NSMicrophoneUsageDescription</key>
-<string>This app needs access to your microphone to enable voice recording, audio messages, voice commands, and other audio-related features. Audio recordings will only be captured when you actively use audio features and will be processed according to our privacy policy.</string>
-```
-
-**When to use:** Voice recording, audio messages, voice commands
-**Implementation:** Use `AVAudioSession` and `AVAudioRecorder`
-
-#### 4. Photo Library Permission
+#### 2. Photo Library Permission
 ```xml
 <key>NSPhotoLibraryUsageDescription</key>
-<string>This app needs access to your photo library to allow you to select and upload photos and videos from your device. This enables you to share content, create posts, or use images in various app features. We only access photos you specifically choose to share.</string>
+<string>To select a photo from the gallery</string>
 ```
 
 **When to use:** Photo selection, content sharing, profile pictures
 **Implementation:** Use `PHPickerViewController` (iOS 14+) or `UIImagePickerController`
 
+#### 3. Microphone Permission (Only if Voice Input Feature is Used)
+```xml
+<key>NSMicrophoneUsageDescription</key>
+<string>Only if the app uses voice input</string>
+```
+
+**When to use:** Voice recording, audio messages (only if feature is enabled)
+**Implementation:** Use `AVAudioSession` and `AVAudioRecorder`
+
+#### 4. User Tracking Permission (ATT)
+```xml
+<key>NSUserTrackingUsageDescription</key>
+<string>To request ATT tracking permission</string>
+```
+
+**When to use:** App Tracking Transparency compliance, analytics tracking
+**Implementation:** Use `ATTrackingManager.requestTrackingAuthorization()`
+
+### Location Permission (Not Used)
+```xml
+<!-- Not currently implemented - no location feature -->
+<!-- <key>NSLocationWhenInUseUsageDescription</key> -->
+<!-- <string>Not used - no location feature in app</string> -->
+```
+
+**Note:** Not using `NSLocationWhenInUseUsageDescription` because there is no location feature in the app.
+
 ## Implementation Best Practices
 
-### 1. Just-in-Time Permission Requests
+### 1. Permission Declaration Strategy
 
-**❌ Don't request all permissions at app launch**
+**Key Principle:** Declare permissions only if the feature is used
+
 ```swift
-// Bad: Requesting all permissions immediately
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    requestCameraPermission()
-    requestLocationPermission()
-    requestMicrophonePermission()
-    return true
-}
+// Example: Check if feature is enabled before adding to Info.plist
+#if CAMERA_FEATURE_ENABLED
+// NSCameraUsageDescription is included in Info.plist
+#endif
+
+#if VOICE_INPUT_FEATURE_ENABLED  
+// NSMicrophoneUsageDescription is included in Info.plist
+#endif
 ```
 
-**✅ Request permissions when needed**
+### 2. ATT Implementation
+
 ```swift
-// Good: Request permission when user tries to use feature
-func takePhotoButtonTapped() {
-    switch AVCaptureDevice.authorizationStatus(for: .video) {
-    case .authorized:
-        presentCamera()
-    case .notDetermined:
-        AVCaptureDevice.requestAccess(for: .video) { granted in
-            DispatchQueue.main.async {
-                if granted {
-                    self.presentCamera()
-                } else {
-                    self.showPermissionDeniedAlert()
+import AppTrackingTransparency
+import AdSupport
+
+class TrackingManager {
+    static func requestTrackingPermission() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                    // Tracking authorized
+                    print("Tracking authorized")
+                case .denied, .restricted, .notDetermined:
+                    // Tracking not authorized
+                    print("Tracking not authorized")
+                @unknown default:
+                    break
                 }
             }
         }
-    case .denied, .restricted:
-        showPermissionDeniedAlert()
-    @unknown default:
-        break
     }
 }
 ```
 
-### 2. Graceful Permission Handling
+### 3. Permission Status Checking
 
 ```swift
-func showPermissionDeniedAlert() {
-    let alert = UIAlertController(
-        title: "Permission Required",
-        message: "To use this feature, please enable camera access in Settings > Privacy & Security > Camera > [App Name]",
-        preferredStyle: .alert
-    )
-    
-    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-    alert.addAction(UIAlertAction(title: "Open Settings", style: .default) { _ in
-        if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-            UIApplication.shared.open(settingsURL)
-        }
-    })
-    
-    present(alert, animated: true)
-}
-```
+import Photos
+import AVFoundation
 
-### 3. Alternative Functionality
-
-```swift
-func handlePhotoSelection() {
-    switch PHPhotoLibrary.authorizationStatus() {
-    case .authorized, .limited:
-        presentPhotoPicker()
-    case .denied, .restricted:
-        // Provide alternative: allow user to take new photo
-        showPhotoOptionsAlert()
-    case .notDetermined:
-        PHPhotoLibrary.requestAuthorization { status in
-            DispatchQueue.main.async {
-                if status == .authorized || status == .limited {
-                    self.presentPhotoPicker()
-                } else {
-                    self.showPhotoOptionsAlert()
-                }
-            }
-        }
-    @unknown default:
-        break
+class PermissionChecker {
+    static func checkCameraPermission() -> Bool {
+        return AVCaptureDevice.authorizationStatus(for: .video) == .authorized
     }
-}
-
-func showPhotoOptionsAlert() {
-    let alert = UIAlertController(
-        title: "Photo Access",
-        message: "You can either take a new photo or enable photo library access in Settings.",
-        preferredStyle: .actionSheet
-    )
     
-    alert.addAction(UIAlertAction(title: "Take Photo", style: .default) { _ in
-        self.requestCameraPermission()
-    })
-    alert.addAction(UIAlertAction(title: "Open Settings", style: .default) { _ in
-        if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-            UIApplication.shared.open(settingsURL)
-        }
-    })
-    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+    static func checkPhotoLibraryPermission() -> Bool {
+        return PHPhotoLibrary.authorizationStatus() == .authorized
+    }
     
-    present(alert, animated: true)
+    static func checkMicrophonePermission() -> Bool {
+        return AVAudioSession.sharedInstance().recordPermission == .granted
+    }
 }
 ```
 

@@ -15,19 +15,24 @@
     
     <!-- Camera Permission -->
     <key>NSCameraUsageDescription</key>
-    <string>This app needs access to your camera to allow you to take photos and videos for creating content, scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose to use within the app.</string>
-    
-    <!-- Location Permission (When In Use) -->
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app needs access to your location to provide location-based services, such as finding nearby content, location-specific features, or improving your experience with relevant local information. Your location is only accessed when you actively use location-based features.</string>
-    
-    <!-- Microphone Permission -->
-    <key>NSMicrophoneUsageDescription</key>
-    <string>This app needs access to your microphone to enable voice recording, audio messages, voice commands, and other audio-related features. Audio recordings will only be captured when you actively use audio features and will be processed according to our privacy policy.</string>
+    <string>To upload profile picture</string>
     
     <!-- Photo Library Permission -->
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>This app needs access to your photo library to allow you to select and upload photos and videos from your device. This enables you to share content, create posts, or use images in various app features. We only access photos you specifically choose to share.</string>
+    <string>To select a photo from the gallery</string>
+    
+    <!-- Microphone Permission - Only if voice input feature is used -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Only if the app uses voice input</string>
+    
+    <!-- User Tracking Permission (ATT) -->
+    <key>NSUserTrackingUsageDescription</key>
+    <string>To request ATT tracking permission</string>
+    
+    <!-- Location Permission - Not currently used -->
+    <!-- <key>NSLocationWhenInUseUsageDescription</key> -->
+    <!-- <string>Not used - no location feature in app</string> -->
+    <!-- Note: Not using NSLocationWhenInUseUsageDescription because there is no location feature -->
     
     <!-- Photo Library Add-Only Permission -->
     <key>NSPhotoLibraryAddUsageDescription</key>

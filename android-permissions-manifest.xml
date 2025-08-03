@@ -41,66 +41,51 @@
     
     <!-- Camera Permission -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
     <!-- 
-    Rationale: "This app needs camera access to let you take photos and videos for creating content, 
-    scanning documents, or capturing moments. Your photos and videos will only be used for the features you choose."
-    Usage: Photo/video capture, document scanning, QR code scanning
-    Implementation: Use CameraX or Camera2 API
-    -->
-
-    <!-- Read External Storage (for older Android versions) -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
-        android:maxSdkVersion="32" />
-    <!-- 
-    Rationale: "This app needs access to your photos and videos to let you select and upload content from your device. 
-    We only access files you specifically choose to share."
-    Usage: Photo selection, content sharing, profile pictures
-    Implementation: Use MediaStore API for Android 10+, SAF for older versions
-    -->
-
-    <!-- Write External Storage (for saving files) -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
-        android:maxSdkVersion="28" />
-    <!-- 
-    Rationale: "This app needs permission to save photos and videos to your device. 
-    This allows you to save content you create or download within the app to your gallery."
-    Usage: Saving downloaded content, exporting files
-    Implementation: Use MediaStore API for Android 10+
+    Justification: "To take a profile picture"
+    Usage: Profile picture upload, document scanning, QR code scanning
+    Implementation: Use permission_handler package with camera plugin
     -->
 
     <!-- ========================================
-         LOCATION PERMISSIONS
+         STORAGE PERMISSIONS
          ======================================== -->
     
-    <!-- Location Permission (Fine) -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- External Storage Read/Write Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
     <!-- 
-    Rationale: "This app needs access to your precise location to provide location-based services, 
-    such as finding nearby content, location-specific features, or improving your experience with relevant local information."
-    Usage: Location-based services, nearby content, local features
-    Implementation: Use FusedLocationProviderClient
-    -->
-
-    <!-- Location Permission (Coarse) -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- 
-    Rationale: "This app uses approximate location to provide general location-based features 
-    while using less battery power. You can choose to provide precise location for enhanced features."
-    Usage: General location services, battery optimization
-    Implementation: Fallback for fine location
+    Justification: "To import or export files"
+    Usage: File import/export, content sharing, document storage
+    Implementation: Use permission_handler package with file system access
     -->
 
     <!-- ========================================
-         AUDIO PERMISSIONS
+         MICROPHONE PERMISSIONS (OPTIONAL)
          ======================================== -->
     
-    <!-- Microphone Permission -->
+    <!-- Microphone Permission - Only if voice input feature is enabled -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
     <!-- 
-    Rationale: "This app needs access to your microphone to enable voice recording, audio messages, 
-    voice commands, and other audio-related features. Audio recordings will only be captured when you actively use audio features."
-    Usage: Voice recording, audio messages, voice commands
-    Implementation: Use MediaRecorder or AudioRecord
+    Justification: "To record audio (if enabled)"
+    Usage: Voice recording, audio messages (only if feature is enabled)
+    Implementation: Use permission_handler package with audio recording plugin
+    Note: Only requested when needed (runtime) and optional if not core feature
+    -->
+
+    <!-- ========================================
+         LOCATION PERMISSIONS (NOT CURRENTLY USED)
+         ======================================== -->
+    
+    <!-- Location permissions are not currently implemented -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- <uses-feature android:name="android.hardware.location" android:required="false" /> -->
+    <!-- 
+    Note: We do not currently ask for location permissions, unless the feature is added in the future.
+    When implemented, use permission_handler package for runtime permission management.
     -->
 
     <!-- ========================================
