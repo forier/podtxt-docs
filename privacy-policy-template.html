@@ -120,7 +120,7 @@
         .get-app-btn {
             background: #333;
             color: white !important;
-            padding: 0.7rem 1.2rem;
+            padding: 0.7rem 1.5rem 0.7rem 1.2rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -128,17 +128,18 @@
             margin-left: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 1rem;
             position: relative;
             overflow: hidden;
             z-index: 1;
+            min-width: 120px;
         }
         
         .get-app-btn::before {
             content: '';
             position: absolute;
             top: 50%;
-            right: 14px;
+            right: 8px;
             width: 32px;
             height: 32px;
             background: white;
@@ -151,10 +152,10 @@
         .get-app-btn::after {
             content: '→';
             position: absolute;
-            right: 22px;
+            right: 16px;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #333;
             z-index: 2;
@@ -162,7 +163,7 @@
         }
         
         .get-app-btn:hover::before {
-            transform: translateY(-50%) scale(3.5);
+            transform: translateY(-50%) scale(4);
         }
         
         .get-app-btn:hover {
