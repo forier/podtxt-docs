@@ -44,26 +44,28 @@
   - [x] Similar technologies
   - [x] Local storage and session storage
 
-### 2.4 Third-Party Sharing
-- [x] List service providers and third-party categories:
-  - [x] Payment processors (Stripe, PayPal, Apple Pay, Google Pay)
-  - [x] Analytics services (Google Analytics, Firebase)
+### 2.4 Third-Party Services and SDKs
+- [x] List of SDKs and third-party services:
+  - [x] Firebase (Google Analytics, Firebase, Messaging)
   - [x] Cloud storage (AWS, Google Cloud)
-  - [x] Customer support tools (Zendesk, Intercom)
-  - [x] Marketing platforms (Mailchimp, SendGrid)
+  - [x] RevenueCat or in_app_purchase for subscriptions
+  - [x] Apple StoreKit and Google Play Billing for native payment systems
   - [x] App store platforms (Apple App Store, Google Play)
-- [x] Describe:
-  - [x] Security measures adopted
-  - [x] Data processing agreements with sub-processors
-  - [x] International data transfers
+- [x] Type of data accessed:
+  - [x] Device ID, error logs, anonymous usage data, transaction information
+- [x] All third parties are bound by a Data Processing Agreement (DPA)
+- [x] Some services perform cross-border data transfers (example: Firebase to the US)
 
-### 2.5 Security Measures
-- [x] Summarize organizational and technical measures:
-  - [x] Encryption in transit and at rest
-  - [x] Backup and disaster recovery
-  - [x] Access controls and authentication
-  - [x] Security audits and monitoring
-- [x] Include security disclaimer ("we don't guarantee 100% protection")
+### 2.5 Security Practices for Mobile
+- [x] Secure local storage:
+  - [x] Android: flutter_secure_storage or EncryptedSharedPreferences
+  - [x] iOS: iOS Keychain
+- [x] Encrypted communication using HTTPS/TLS
+- [x] Runtime protection:
+  - [x] Obfuscation and ProGuard for Android
+  - [x] Flutter build optimization for all platforms
+- [x] Do not store sensitive data permanently on the device
+- [x] Does not record personal data in application logs or crash logs
 
 ### 2.6 Data Subject Rights
 - [x] Expand GDPR rights exercise methods:
@@ -87,40 +89,48 @@
 
 ## 🏪 3. Store Requirements
 
-### 3.1 Apple App Store & Privacy Nutrition Labels
-- [x] Integrate summary compliant with Apple Privacy Nutrition Labels:
-  - [x] "Data Used to Track You"
-  - [x] "Data Linked to You"
-  - [x] "Data Not Linked to You"
-- [x] Ensure App Store Connect declarations exactly match policies
-- [x] Update labels with each new app version
+### 3.1 Apple App Store (Privacy + Subscription Compliance)
+- [x] Provide a working link to:
+  - [x] Privacy Policy
+  - [x] Terms of Use (EULA)
+- [x] Subscription information displayed:
+  - [x] Name: Premium Access
+  - [x] Price and duration: displayed within the app (e.g. monthly/yearly)
+  - [x] Automatic renewal: valid unless cancelled at least 24 hours before the end of the period
+- [x] Users can manage subscriptions in Settings > Apple ID > Subscriptions.
+- [x] ATT was implemented before the tracking SDK was active.
+- [x] Privacy Nutrition labels correspond to the data actually collected (device ID, crashes, analytics).
 
-### 3.2 Google Play Data Safety
-- [x] Prepare Data Safety section in Play Console:
-  - [x] Types of data collected
-  - [x] Collection purposes
-  - [x] Third-party sharing
-  - [x] Data security
-- [x] Attach Privacy Policy link in every update
+### 3.2 Google Play Store (Data Safety + Billing)
+- [x] The Data Safety Form is completed as follows:
+  - [x] Data type: Device ID, crash log, analytics, email (if login is used)
+  - [x] Purpose: Analytics, performance improvement, account management
+  - [x] Third-party SDKs: Firebase, RevenueCat
+- [x] Privacy Policy link is available and consistent across all distribution channels
+- [x] If using Google Play Billing:
+  - [x] Automatic renewal and refund policy information is explained in the app
 
 ---
 
 ## 📱 4. Permission Declarations
 
-### 4.1 iOS Info.plist
-- [x] Add fields with clear contextual explanations:
-  - [x] `NSCameraUsageDescription` - "Camera access for taking photos"
-  - [x] `NSLocationWhenInUseUsageDescription` - "Location access for local services"
-  - [x] `NSMicrophoneUsageDescription` - "Microphone access for audio recordings"
-  - [x] `NSPhotoLibraryUsageDescription` - "Photo library access for selecting images"
+### 4.1 iOS Info.plist Usage Descriptions
+- [x] Declare permissions only if the feature is used:
+  - [x] `NSCameraUsageDescription` – "to upload profile picture"
+  - [x] `NSPhotoLibraryUsageDescription` - "to select a photo from the gallery"
+  - [x] `NSMicrophoneUsageDescription` - "only if the app uses voice input"
+  - [x] `NSUserTrackingUsageDescription` - "to request ATT tracking permission"
+- [x] Not using `NSLocationWhenInUseUsageDescription` because there is no location feature
+- [x] All reasons for use are clearly written in Info.plist
 
-### 4.2 Android Runtime Permissions
-- [x] Provide permission rationale messages justifying use of:
-  - [x] Camera
-  - [x] Location
-  - [x] Microphone
-  - [x] Storage
-- [x] Document permissions in manifest and explain in-app why they're requested
+### 4.2 Android Permissions & Justifications
+- [x] Use the permission_handler package for runtime permissions management.
+- [x] Justification for its use is displayed via a dialog before the request:
+  - [x] Camera: “To take a profile picture”
+  - [x] Microphone: “To record audio (if enabled)”
+  - [x] Storage: “To import or export files”
+- [x] Does not ask for location, unless the feature is added in the future
+- [x] Permissions are only requested when needed (runtime), and are optional if not a core part of the feature.
 
 ---
 
